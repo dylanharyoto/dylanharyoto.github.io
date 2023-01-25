@@ -95,11 +95,11 @@ button:hover {
 }
 
 #opening {
-    height: 100vh;
     margin-top: 5.625rem;
 }
 #opening .content {
     grid-template-columns: 55% 45%;
+    border: 1px solid green;
 }
 
 #about-me {
@@ -233,6 +233,7 @@ button:hover {
 @media only screen and (max-width: 700px) {
     header {
         justify-content: center;
+        height: 3.75rem;
     }
     nav {
         display: none;
@@ -246,6 +247,9 @@ button:hover {
     .content {
         display: flex;
         flex-wrap: wrap;
+    }
+    #opening {
+        margin-top: 2.5rem;
     }
     #about-me .content {
         flex-wrap: wrap-reverse;
