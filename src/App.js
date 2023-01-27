@@ -29,11 +29,9 @@ function App() {
             <h1>About Me</h1>
             <div className="content">
                 <div>
-                    <b>A freshman studying Computer Science at the Faculty of Engineering, The Hong Kong Polytechnic University.</b>
-                    <p>Since high school, I have aspired to become a game changer by solving problems and making a significant contribution
-                            to society. Aside from that, I enjoy doing some research and learning new things in the field of technology.</p>
-                    <p>Choosing Computer Science as my major provides me access to the resources I need as a problem solver, from the 
-                        assignments given on campus to the people around me with the same mission, all of which support the process of problem-solving.</p>
+                    <b>A freshman majoring in Computer Science at the Faculty of Engineering, The Hong Kong Polytechnic University.</b>
+                    <p>Impact - the adjective I would use to describe the inventions of the creators of modern society, providing solutions that enable people to live better lives. Outstanding grades and olympiad victories; those awards, while critical for my future career, are incapable of providing a long-term effect on society.</p>
+                    <p>Choosing a Computer Science major strengthens my ability to address real-world problems by solving complex problems in coding; challenging situations have always been my closest companion. With this in mind, my enthusiasm drives me to become a problem-solver, a game-changer capable of resolving society&#39;s major problems</p>
                     <a href="./Resume.pdf" download><button>Download Resume</button></a>
                 </div>
                 <div className="wrapper">
@@ -148,7 +146,7 @@ function App() {
                             find material to build reinforcement walls, install sandbags to protect houses, and notify their 
                             occupants that they have to evacuate.</p>
                         <div>
-                            <a href="https://drive.google.com/file/d/1ptoGoisrxm6_9SSEPIXs8UCOUic5HP7K/view?usp=share_link" target="_blank"><button>View Certificate</button></a>
+                            <a href="https://drive.google.com/file/d/1ptoGoisrxm6_9SSEPIXs8UCOUic5HP7K/view?usp=share_link" target="_blank"><button>View Certificate</button></a>&ensp;
                             <a href="https://youtu.be/u_6thGTL1FY" target="_blank"><button>Watch Video</button></a>
                         </div>   
                     </div>
@@ -161,7 +159,7 @@ function App() {
                         <p>It is the mission to create a robot that modernizes the network within a city by installing
                                 new wireless node devices and establishing an optical network between them.</p>
                         <div>
-                            <a href="https://drive.google.com/file/d/1hSHcFeTnvNbnZvUr3iXFClPAooAuoTJb/view?usp=share_link" target="_blank"><button>View Certificate</button></a>
+                            <a href="https://drive.google.com/file/d/1hSHcFeTnvNbnZvUr3iXFClPAooAuoTJb/view?usp=share_link" target="_blank"><button>View Certificate</button></a>&ensp;
                             <a href="https://youtu.be/CFJtxDJGZvk" target="_blank"><button>Watch Video</button></a>
                         </div>
                     </div>
@@ -176,7 +174,7 @@ function App() {
                         <p>It is the mission to create a robot that modernizes the network within a city by installing
                             new wireless node devices and establishing an optical network between them.</p>
                         <div>
-                            <a href="https://drive.google.com/file/d/1V7GEpbFfNJOZnRMy1buDauQFXe0PMoyM/view?usp=share_link" target="_blank"><button>View Certificate</button></a>
+                            <a href="https://drive.google.com/file/d/1V7GEpbFfNJOZnRMy1buDauQFXe0PMoyM/view?usp=share_link" target="_blank"><button>View Certificate</button></a>&ensp;
                             <a href="https://youtu.be/ih-ab7itzrA" target="_blank"><button>Watch Video</button></a>
                         </div>   
                     </div>
@@ -189,7 +187,7 @@ function App() {
                         <p>It is the mission to build robots which can follow the wall (which might be curved) and pass 
                             through various obstacles, including speed bump, bridge, and water. </p>
                         <div>
-                            <a href="https://drive.google.com/file/d/1TjhbFPFsUwa1siwQt8V3pEkQP_pzUCo6/view?usp=share_link" target="_blank"><button>View Certificate</button></a>
+                            <a href="https://drive.google.com/file/d/1TjhbFPFsUwa1siwQt8V3pEkQP_pzUCo6/view?usp=share_link" target="_blank"><button>View Certificate</button></a>&ensp;
                             <a href="https://youtube.com/shorts/Oa0pXM7elh4?feature=share" target="_blank"><button>Watch Video</button></a>
                         </div>
                     </div>
@@ -204,7 +202,7 @@ function App() {
                         <p>It is the mission to build robots that can investigate and explore different environments.
                                 This game challenges you to dive and explore under the sea for pearls. </p>
                         <div>
-                            <a href="https://drive.google.com/file/d/1EQ-3OaHy4Z21CAFcMsZrWA9e5Mh7jMaX/view?usp=share_link" target="_blank"><button>View Certificate</button></a>
+                            <a href="https://drive.google.com/file/d/1EQ-3OaHy4Z21CAFcMsZrWA9e5Mh7jMaX/view?usp=share_link" target="_blank"><button>View Certificate</button></a>&ensp;
                             <a href="https://gdsc.community.dev/the-hong-kong-polytechnic-university/" target="_blank"><button>Watch Video</button></a>
                         </div>   
                     </div>
