@@ -2,15 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    const scrollSection = (sectionID) => {
+        document.getElementById(sectionID).scrollIntoView({
+            behavior: 'smooth'
+        });
+    };
   return (
     <div>
     <header>
         <a href="#opening"><h2>DDH</h2></a>
         <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#awards">Awards</a>
-            <a href="#contact">Contact</a>
+            <a onClick={() => scrollSection('about-me')}>About Me</a>
+            <a onClick={() => scrollSection('experiences')}>Experiences</a>
+            <a onClick={() => scrollSection('awards')}>Awards</a>
+            <a onClick={() => scrollSection('contact')}>Contact</a>
         </nav>
     </header>
     <main>
@@ -188,7 +193,30 @@ function App() {
 
         <div id="awards">
             <h1>Awards</h1>
+                
             <div className="content">
+                <h2 className="subtitle">Scholarships<hr/></h2>
+                <div className="box entry">
+                    <div>
+                        <h2>Dr Winnie S M Tang - PolyU Student Innovation & Entrepreneurship Scholarship</h2>
+                        <h4>by PolyVentures | Dec 2023</h4>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
+                </div>
+                <div className="box entry">
+                    <div>
+                        <h2>HKSAR Government Scholarship</h2>
+                        <h4>by HKSAR Government | Dec 2023</h4>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
+                </div>  
+                <div className="box entry">
+                    <div>
+                        <h2>Talent Development Scholarship</h2>
+                        <h4>by HKSAR Government | April 2023</h4>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
+                </div>    
                 <h2 className="subtitle">Competitions<hr/></h2>
                 <div className="right">
                     <div>
