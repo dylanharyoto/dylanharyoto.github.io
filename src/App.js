@@ -57,8 +57,8 @@ function App() {
                     <h2>Undergraduate Researcher</h2>
                     <h3>Graduate School, The Hong Kong Polytechnic University</h3>
                     <ul>
-                        <li>Admitted to the Undergraduate Research and Innovation Scheme (URIS)</li>
-                        <li>Aim to optimize wireless communication for fire evacuation using UAVs</li>
+                        <li>Secured admission to the Undergraduate Research and Innovation Scheme with a grant of HK$30,000, supervised by Dr. Qixin Wang.</li>
+                        <li>Currently researching and proving the NP-hardness of an algorithm for intra-cell channel time-slot scheduling for fire evacuation.</li>
                     </ul>
                 </div> 
                 <a href="https://www.polyu.edu.hk/en/gs/"><button>Visit Website</button></a> 
@@ -71,8 +71,8 @@ function App() {
                     <h2>Market Research Assistant</h2>
                     <h3>Hutchison Port Holdings</h3>
                     <ul>
-                        <li>Extracted financial data of shipping line companies for market insights</li>
-                        <li>Analyzed countries and industries for company's expansion plan</li>
+                        <li>Conducted extraction and analysis of financial data from shipping line companies, providing valuable reports for market research.</li>
+                        <li>Contributed significantly to the company’s expansion plan by conducting in-depth analyses of countries and industry trends.</li>
                     </ul>
                 </div> 
                 <a href="https://hutchisonports.com/en/"><button>Visit Website</button></a> 
@@ -85,38 +85,24 @@ function App() {
                     <h2>Student Research Assistant</h2>
                     <h3>Department of Computing, The Hong Kong Polytechnic University</h3>
                     <ul>
-                        <li>Installed LoRa communication on Raspberry PI using MKR WAN 1310</li>
-                        <li>Conducted experiment on server-client connection using SSH and X Window</li>
+                        <li>Installed LoRa communication on Raspberry Pi using MKR WAN 1310, enhancing the system’s wireless communication capabilities.</li>
+                        <li>Conducted an experiment on a server-client connection using SSH and X Window to optimize the communication infrastructure.</li>
                     </ul>
                 </div> 
                 <a href="https://www.polyu.edu.hk/en/gs/"><button>Visit Website</button></a> 
                 <div className="dotline">
                     <div className="dot"></div>
-                    <div className="line"></div>
                 </div>
                 <div>
                     <h4>September 2022 - December 2022</h4>
                     <h2>Data Entry Operator</h2>
                     <h3>Ministry of Foreign Affairs of the Republic of Indonesia</h3>
                     <ul>
-                        <li>Inputted the personal information of Indonesian laborers into the database.</li>
-                        <li>Worked with the internal teams to ensure that data is correct and consistent.</li>
+                        <li>Entered the personal information of Indonesian laborers into the centralized database, showcasing a keen eye for detail and precision.</li>
+                        <li>Utilized organizational skills to ensure high-quality information management, enhancing overall data integrity and reliability.</li>
                     </ul>
                 </div> 
                 <a href="https://kemlu.go.id/hongkong/lc"><button>Visit Website</button></a> 
-                <div className="dotline">
-                    <div className="dot"></div>
-                </div> 
-                <div>
-                    <h4>November 2022</h4>
-                    <h2>Student Assistant</h2>
-                    <h3>Service Learning and Leadership Office, The Hong Kong Polytechnic University</h3>
-                    <ul>
-                        <li>Provided on-site assistance to guests.</li>
-                        <li>Provided logistics and materials for the event.</li>
-                    </ul>
-                </div> 
-                <a href="https://www.polyu.edu.hk/sllo/icsl2022/"><button>Visit Website</button></a>
                 <h2 className="subtitle">Volunteer Experiences<hr/></h2>
                 <div className="dotline">
                     <div className="dot"></div>
@@ -127,8 +113,8 @@ function App() {
                     <h2>Vice President</h2>
                     <h3>Google Developer Student Clubs PolyU</h3>
                     <ul>
-                        <li>Assist technical leads in conducting workshops about technology trend</li>
-                        <li>Develop an app for ordering food in advance from PolyU canteens</li>
+                        <li>Collaborate with technical leads to organize engaging workshops covering topics related to artificial intelligence.</li>
+                        <li>Prepare and organize for the upcoming hackathon, PolyHack, ensuring a creative and collaborative environment for participants.</li>
                     </ul>
                 </div> 
                 <a href="https://gdsc.community.dev/the-hong-kong-polytechnic-university/"><button>Visit Website</button></a> 
@@ -141,8 +127,8 @@ function App() {
                     <h2>Class Representative</h2>
                     <h3>Department of Computing, The Hong Kong Polytechnic University</h3>
                     <ul>
-                        <li>Selected by the professors in the department to become the student representative</li>
-                        <li>Collect feedback from classmates about the academic curriculum for further improvement</li>
+                        <li>Chosen by faculty members to actively participate in semester meetings with professors addressing student learning experiences.</li>
+                        <li>Actively gathering constructive feedback from peers to contribute to the continuous refinement of the curriculum.</li>
                     </ul>
                 </div> 
                 <a href="https://www.polyu.edu.hk/en/comp/"><button>Visit Website</button></a> 
@@ -155,8 +141,8 @@ function App() {
                     <h2>Project Volunteer</h2>
                     <h3>African Evangelistic Enterprise</h3>
                     <ul>
-                        <li>Installed solar-powered electricity in 400 households in rural areas</li>
-                        <li>Implemented an IoT system with MPPT controller for data tracking purposes</li>
+                        <li>Installed solar-powered electricity to 400 households in rural areas, illuminating lives and fostering sustainable energy solutions.</li>
+                        <li>Implemented an advanced IoT system with an MPPT Controller, improving data tracking for more effective monitoring and analysis.</li>
                     </ul>
                 </div> 
                 <a href="https://www.aeerwanda.ngo/"><button>Visit Website</button></a>
@@ -169,8 +155,8 @@ function App() {
                     <h2>Innovation and Technology</h2>
                     <h3>PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊</h3>
                     <ul>
-                        <li>Developed the curriculum of RC Car for primary and secondary school</li>
-                        <li>Built the RC Car using Arduino and provided online video content</li>
+                        <li>Crafted a curriculum tailored for primary and secondary school students, focusing on the development of RC Cars.</li>
+                        <li>Spearheaded the modification and enhancement of the team’s website, with a keen emphasis on improving the UI/UX.</li>
                     </ul>
                 </div> 
                 <a href="https://hkpolyuracing.com"><button>Visit Website</button></a>
@@ -183,8 +169,8 @@ function App() {
                     <h2>Technical Lead</h2>
                     <h3>Google Developer Student Clubs PolyU</h3>
                     <ul>
-                        <li>Introduced Lego Mindstorms EV3 for beginners through physical workshops.</li>
-                        <li>Organized events and prepared for upcoming competitions.</li>
+                        <li>Facilitated introductory workshops on Lego Mindstorms EV3, catering to beginners and fostering hands-on learning experiences.</li>
+                        <li>Collaborated seamlessly with executive committee members from other divisions to plan and prepare for upcoming events.</li>
                     </ul>
                 </div> 
                 <a href="https://gdsc.community.dev/the-hong-kong-polytechnic-university/"><button>Visit Website</button></a>
@@ -192,7 +178,7 @@ function App() {
         </div>
 
         <div id="awards">
-            <h1>Awards</h1>
+            <h1>Accomplishment</h1>
                 
             <div className="content">
                 <h2 className="subtitle">Scholarships<hr/></h2>
@@ -200,6 +186,7 @@ function App() {
                     <div>
                         <h2>Dr Winnie S M Tang - PolyU Student Innovation & Entrepreneurship Scholarship</h2>
                         <h4>by PolyVentures | Dec 2023</h4>
+                        <h3>Awarded: HK$5,000</h3>
                     </div>
                     <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
                 </div>
@@ -207,6 +194,7 @@ function App() {
                     <div>
                         <h2>HKSAR Government Scholarship</h2>
                         <h4>by HKSAR Government | Dec 2023</h4>
+                        <h3>Awarded: HK$80,000</h3>
                     </div>
                     <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
                 </div>  
@@ -214,10 +202,11 @@ function App() {
                     <div>
                         <h2>Talent Development Scholarship</h2>
                         <h4>by HKSAR Government | April 2023</h4>
+                        <h3>Awarded: HK$10,000</h3>
                     </div>
                     <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
                 </div>    
-                <h2 className="subtitle">Competitions<hr/></h2>
+                <h2 className="subtitle">Awards<hr/></h2>
                 <div className="right">
                     <div>
                         <h2>PolyHack 2023</h2>
@@ -237,7 +226,7 @@ function App() {
                     <div>
                         <h2>World Robot Olympiad 2020</h2>
                         <h4>12 - 15 November 2020 | Montreal, Canada</h4><br/>
-                        <b>Bronze Medal (3rd Place), Rio Tinto Innovation Award</b>
+                        <b>Bronze Medalist & Rio Tinto Innovation Award</b>
                         <p>It is the mission to design a robot that will need to locate the dike's weaknesses, 
                             find material to build reinforcement walls, install sandbags to protect houses, and notify their 
                             occupants that they have to evacuate.</p>
@@ -266,7 +255,7 @@ function App() {
                     <div>
                         <h2>Indonesian Robotic Olympiad 2019</h2>
                         <h4>6 - 7 September 2019 | Surabaya, Indonesia</h4><br/>
-                        <b>Gold Medal (1st Place) in Regular Senior</b>
+                        <b>Gold Medalist in Regular Senior</b>
                         <p>It is the mission to create a robot that modernizes the network within a city by installing
                             new wireless node devices and establishing an optical network between them.</p>
                         <div>

@@ -174,7 +174,7 @@ button:hover {
 }
 .line {
     width: 20%;
-    height: 85%;
+    height: 90%;
     background-color: #fff;
     margin: 0 auto;
 }
@@ -297,12 +297,12 @@ button:hover {
     .dotline, #experiences a {
         display: none;
     }
-    #awards .left, #awards .right {
+    #awards .left, #awards .right, #awards .box {
         display: flex;
         row-gap: 0.625rem;
         margin-bottom: 1.25rem;
     }
-    #awards .left {
+    #awards .left, #awards .box {
         flex-wrap: wrap;
     }
     #awards .right {
