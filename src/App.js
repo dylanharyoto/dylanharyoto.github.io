@@ -188,7 +188,7 @@ function App() {
                         <h4>by PolyVentures | Dec 2023</h4>
                         <h3>Awarded: HK$5,000</h3>
                     </div>
-                    <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
+                    <a href="https://drive.google.com/file/d/1CQD--1oebL4Md51DAOz4wKedydvUZNjv/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
                 </div>
                 <div className="box entry">
                     <div>
@@ -196,7 +196,7 @@ function App() {
                         <h4>by HKSAR Government | Dec 2023</h4>
                         <h3>Awarded: HK$80,000</h3>
                     </div>
-                    <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
+                    <a href="" target="_blank"><button>View Certificate</button></a>&ensp;
                 </div>  
                 <div className="box entry">
                     <div>
@@ -204,7 +204,7 @@ function App() {
                         <h4>by HKSAR Government | April 2023</h4>
                         <h3>Awarded: HK$10,000</h3>
                     </div>
-                    <a href="https://drive.google.com/file/d/1HErYcWwfKGgewbn0lloPcT2nm_KOtVgy/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
+                    <a href="https://drive.google.com/file/d/1ZjEwMxhmooEevRZ4MArcTvCM55coraqg/view?usp=sharing" target="_blank"><button>View Certificate</button></a>&ensp;
                 </div>    
                 <h2 className="subtitle">Awards<hr/></h2>
                 <div className="right">
