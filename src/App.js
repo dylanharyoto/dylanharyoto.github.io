@@ -14,7 +14,7 @@ function App() {
         <nav>
             <a onClick={() => scrollSection('about-me')}>About Me</a>
             <a onClick={() => scrollSection('experiences')}>Experiences</a>
-            <a onClick={() => scrollSection('awards')}>Awards</a>
+            <a onClick={() => scrollSection('awards')}>Honors</a>
             <a onClick={() => scrollSection('contact')}>Contact</a>
         </nav>
     </header>
@@ -178,7 +178,7 @@ function App() {
         </div>
 
         <div id="awards">
-            <h1>Accomplishment</h1>
+            <h1>Honors</h1>
                 
             <div className="content">
                 <h2 className="subtitle">Scholarships<hr/></h2>
