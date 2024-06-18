@@ -203,7 +203,6 @@ nav a:hover {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    border: 1px solid red;
 }
 #about > div {
     display: flex;
