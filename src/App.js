@@ -512,8 +512,8 @@ function App() {
         </div>
         <div id="projects">
           <div className="heading">
-            <h4>Built & Designed with Creativity</h4>
-            <p>Click to see more.</p>
+            <h4>Unleashing Creative Excellence</h4>
+            <p>Innovative and Inspiring Works. Click to see more.</p>
           </div>
           <div className="inner">
             <input type="radio" name="slider" id="s1" />
@@ -594,46 +594,94 @@ function App() {
         </div>
         <div id="activities">
           <div className="heading">
-            <h4>Built & Designed with Creativity</h4>
-            <p>Click to see more.</p>
+            <h4>Demonstrating Leadership Through Activities</h4>
+            <p>Empowering Teams with Inspiring Endeavors. Dive deeper.</p>
           </div>
           <div className="img-left">
-            <img src="a1.jpg" />
+            <img src="l1.jpg" />
             <div className="infos-right">
               <div>
-                <h5>Student Ambassador</h5>
-                <p>HSBC/HKU Business Case Competition</p>
-              </div>
-              <div className="details-right">
+                <h4>Student Ambassador</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque in iaculis ante. Proin tempor accumsan felis vel
-                  commodo. Duis vel odio eleifend, consequat est ut, luctus
-                  velit. Nulla tincidunt elementum erat vel commodo.
+                  <a href="https://competition.acrc.hku.hk/">
+                    HSBC/HKU Business Case Competition{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </a>
                 </p>
               </div>
+              <div className="details-right">
+                <ul>
+                  <li>
+                    <p>
+                      Selected as one of the 30+ student ambassadors in charge
+                      of guiding case preparation and presentation.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Successfully guided my team from the preparation round to
+                      reach the final round of the competition.
+                    </p>
+                  </li>
+                </ul>
+              </div>
               <div>
-                <p>May 2024</p>
-                <p>Hong Kong SAR</p>
+                <p>May 2024 | Hong Kong SAR</p>
               </div>
             </div>
           </div>
           <div className="img-right">
-            <img src="a1.jpg" />
+            <img src="l2.jpg" />
             <div className="infos-left">
               <div>
-                <h5>Vice President</h5>
-                <p>Google Developer Student Clubs PolyU</p>
+                <h4>Vice President</h4>
+                <a
+                  href="https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/"
+                  target="_blank"
+                >
+                  <p>
+                    Google Developer Student Clubs PolyU{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </p>
+                </a>
               </div>
               <div className="details-left">
-                <p>
-                  Google Developer Student Clubs is a program by Google that
-                  supports student-led communities interested in technology.
-                </p>
                 <ul>
                   <li>
                     <p>
-                      Selected from 100 candidates to lead a team of technical
+                      Selected from 100+ candidates to lead a team of technical
                       leads in organizing tech-related workshops.
                     </p>
                   </li>
@@ -646,23 +694,39 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Aug 2023 - Present</p>
-                <p>Hong Kong SAR</p>
+                <p>Aug 2023 - Present | Hong Kong SAR</p>
               </div>
             </div>
           </div>
           <div className="img-left">
-            <img src="a1.jpg" />
+            <img src="l3.jpg" />
             <div className="infos-right">
               <div>
-                <h5>Electrical Engineer</h5>
-                <p>African Evangelistic Enterprise </p>
+                <h4>Service Project Lead</h4>
+                <a href="https://aeint.org/">
+                  <p>
+                    African Evangelistic Enterprise{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </p>
+                </a>
               </div>
               <div className="details-right">
-                <p>
-                  African Evangelistic Enterprise is an organization that
-                  focuses on evangelism and community development across Africa.
-                </p>
                 <ul>
                   <li>
                     <p>
@@ -679,65 +743,140 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Mar 2023 - Aug 2023</p>
-                <p>Rwanda, Africa</p>
+                <p>Mar 2023 - Aug 2023 | Rwanda, Africa</p>
               </div>
             </div>
           </div>
           <div className="img-right">
-            <img src="a1.jpg" />
+            <img src="l4.jpg" />
             <div className="infos-left">
               <div>
-                <h5>Technology Innovation Lead</h5>
-                <p>PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊</p>
+                <h4>Technology Innovation Lead</h4>
+                <a href="https://hkpolyuracing.com/">
+                  <p>
+                    PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </p>
+                </a>
               </div>
               <div className="details-left">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque in iaculis ante. Proin tempor accumsan felis vel
-                  commodo. Duis vel odio eleifend, consequat est ut, luctus
-                  velit. Nulla tincidunt elementum erat vel commodo.
-                </p>
+                <ul>
+                  <li>
+                    <p>
+                      Developed RC car learnign curriculum catered specifically
+                      for secondary school students.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Built the RC car using Arduino and provided online video
+                      lectures and tutorials about basic soldering.
+                    </p>
+                  </li>
+                </ul>
               </div>
               <div>
-                <p>Nov 2022 - Jun 2023</p>
-                <p>Hong Kong SAR</p>
+                <p>Nov 2022 - Jun 2023 | Hong Kong SAR</p>
               </div>
             </div>
           </div>
           <div className="img-left">
-            <img src="a1.jpg" />
+            <img src="l5.jpg" />
             <div className="infos-right">
               <div>
-                <h5>Technical Lead</h5>
-                <p>Google Developer Student Club PolyU</p>
+                <h4>Technical Lead</h4>
+                <a
+                  href="https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/"
+                  target="_blank"
+                >
+                  <p>
+                    Google Developer Student Clubs PolyU{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </p>
+                </a>
               </div>
               <div className="details-right">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque in iaculis ante. Proin tempor accumsan felis vel
-                  commodo. Duis vel odio eleifend, consequat est ut, luctus
-                  velit. Nulla tincidunt elementum erat vel commodo.
-                </p>
+                <ul>
+                  <li>
+                    <p>
+                      Hosted beginner workshop on robotics and programming using
+                      Lego Mindstorms EV3 for 20+ non-tech students.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Collaborated with executive committees from other
+                      divisions to plan and prepare for upcoming events.
+                    </p>
+                  </li>
+                </ul>
               </div>
               <div>
-                <p>Oct 2022 - Jul 2023</p>
-                <p>Hong Kong SAR</p>
+                <p>Oct 2022 - Jul 2023 | Hong Kong SAR</p>
               </div>
             </div>
           </div>
           <div className="img-right">
-            <img src="a1.jpg" />
+            <img src="l6.jpg" />
             <div className="infos-left">
               <div>
-                <h5>Country Representative</h5>
-                <p>World Robot Olympiad</p>
+                <h4>Country Representative</h4>
+                <a href="https://wro-association.org/">
+                  <p>
+                    World Robot Olympiad{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </p>
+                </a>
               </div>
               <div className="details-left">
-                <p>
-                  The World Robot Olympiad is an international robotics
-                  competition through robot design and programming.
-                </p>
                 <ul>
                   <li>
                     <p>
@@ -754,17 +893,18 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Jun 2019 - Nov 2020</p>
-                <p>Jakarta, Indonesia</p>
+                <p>Jun 2019 - Nov 2020 | Gyor, Hungary</p>
               </div>
             </div>
           </div>
         </div>
         <div id="awards">
           <div className="heading">
-            <h4>Built & Designed with Creativity</h4>
-            <p>Click to see more.</p>
+            <h4>Celebrating a Legacy of Excellence</h4>
+            <p>Recognitions Highlighting Dedication. Explore more.</p>
           </div>
+          <div></div>
+          <div></div>
           <div className="box">
             <img src="a9.jpg" />
             <div>
@@ -795,6 +935,22 @@ function App() {
               <h5>Bronze Medalist & Best Innovation Award</h5>
               <p>World Robot Olympiad</p>
               <p>November 15, 2020</p>
+            </div>
+          </div>
+          <div className="box">
+            <img src="a3.jpg" />{" "}
+            <div>
+              <h5>Gold Medalist</h5>
+              <p>Indonesian Robotics Olympiad</p>
+              <p>September 7, 2019</p>
+            </div>
+          </div>
+          <div className="box">
+            <img src="a4.jpg" />{" "}
+            <div>
+              <h5>1st Place Winner</h5>
+              <p>Mechatronics Day 4.0</p>
+              <p>October 21, 2018</p>
             </div>
           </div>
         </div>
