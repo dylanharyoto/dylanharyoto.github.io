@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -7,6 +6,8 @@ function App() {
       behavior: "smooth",
     });
   };
+  var screenWidth = window.innerWidth;
+  console.log("Screen width: " + screenWidth + " pixels");
 
   return (
     <div id="body">
@@ -29,7 +30,7 @@ function App() {
               </svg>
             </div>
             <a href="#opening">
-              <h6>dylanharyoto</h6>
+              <h6>ddh</h6>
             </a>
           </div>
           <div>
@@ -88,7 +89,10 @@ function App() {
             <h6>
               I am a penultimate-year <span>Computer Science</span> student with
               a minor in <span>Finance</span> at{" "}
-              <a href="https://www.topuniversities.com/universities/hong-kong-polytechnic-university" target="_blank">
+              <a
+                href="https://www.topuniversities.com/universities/hong-kong-polytechnic-university"
+                target="_blank"
+              >
                 <span>PolyU</span>
               </a>
               .
@@ -155,7 +159,7 @@ function App() {
               <span>July 2024</span>
             </p>
             <h5>Incoming Software Engineer Intern</h5>
-            <a href="https://www.careerhackers.io/pro/">
+            <a href="https://www.careerhackers.io/pro/" target="_blank">
               <p>
                 <i>
                   Career Hackers{" "}
@@ -194,7 +198,7 @@ function App() {
               <span>June 2024 - Present</span>
             </p>
             <h5>Software Engineer Intern</h5>
-            <a href="https://www.castco.com.hk/eng/home">
+            <a href="https://www.castco.com.hk/eng/home" target="_blank">
               <p>
                 <i>
                   Castco Testing Centre Limited{" "}
@@ -251,7 +255,7 @@ function App() {
               <span>August 2023 - Present</span>
             </p>
             <h5>Undergraduate Researcher</h5>
-            <a href="https://www.polyu.edu.hk/en/gs/">
+            <a href="https://www.polyu.edu.hk/en/gs/" target="_blank">
               <p>
                 <i>
                   Graduate School, The Hong Kong Polytechnic University{" "}
@@ -306,7 +310,7 @@ function App() {
               <span>June 2023 - August 2023</span>
             </p>
             <h5>Data Analyst Intern</h5>
-            <a href="https://hutchisonports.com/en/">
+            <a href="https://hutchisonports.com/en/" target="_blank">
               <p>
                 <i>
                   Hutchison Port Holdings{" "}
@@ -360,10 +364,10 @@ function App() {
               <span>February 2023 - August 2023</span>
             </p>
             <h5>Student Research Assistant</h5>
-            <a href="https://www.polyu.edu.hk/comp/">
+            <a href="https://www.polyu.edu.hk/comp/" target="_blank">
               <p>
                 <i>
-                  Department of Computing, The Hong Kong Polytechnic University
+                  Dept. of Computing, The Hong Kong Polytechnic University
                   {"  "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -398,7 +402,7 @@ function App() {
                 <p>
                   Conducted an experiment on a server-client connection using
                   <span>SSH</span> and <span>X Window</span> to optimize the
-                  communication infrastructure.
+                  communication.
                 </p>
               </li>
             </ul>
@@ -410,11 +414,11 @@ function App() {
             <p>Ventures That Pushed Boundaries</p>
           </div>
           <div className="inner">
-            <input type="radio" name="slider" id="s1" />
-            <input type="radio" name="slider" id="s2" />
-            <input type="radio" name="slider" id="s3" />
-            <input type="radio" name="slider" id="s4" />
-            <input type="radio" name="slider" id="s5" />
+            <input type="radio" name="slider" id="s2" checked />
+            <input type="radio" name="slider" id="s3" checked />
+            <input type="radio" name="slider" id="s4" checked />
+            <input type="radio" name="slider" id="s5" checked />
+            <input type="radio" name="slider" id="s1" checked />
             <div class="boxes">
               <label htmlFor="s2" id="slide2">
                 <h4>PolyShop</h4>
@@ -883,7 +887,38 @@ function App() {
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        {/* <div className="heading">
+          <h4>Leading by Example</h4>
+          <p>Making a Difference through Guiding Others</p>
+        </div>
+        <div className="fields">
+          <input
+            type="text"
+            id="firstname"
+            name="First Name"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="Last Name"
+            placeholder="Last Name"
+          />
+          <input
+            type="text"
+            id="firstname"
+            name="First Name"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="Last Name"
+            placeholder="Last Name"
+          />
+        </div> */}
+      </footer>
     </div>
   );
 }
