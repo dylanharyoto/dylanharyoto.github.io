@@ -59,11 +59,11 @@ function App() {
         <div id="opening">
           <div id="opening-outer">
             <div id="opening-inner">
-              <h6>Hello &#128075;, I am</h6>
+              <h4>Hi there&#128075;, I am</h4>
               <h1>
                 Dominicus <span>Dylan</span> Haryoto
               </h1>
-              <h5>Software Engineer Intern @ Career Hackers</h5>
+              <h6>Welcome to my personal collections. Let's connect!</h6>
               <hr />
               <div>
                 <input
@@ -72,43 +72,43 @@ function App() {
                   name="email"
                   required
                 />
-                <button>Send</button>
+                <a>
+                  <button>Send</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div id="about">
-          {/* <div className="heading">
-            <h4>Welcome. This is Dylan.</h4>
-            <p>Dominicus Dylan Haryoto</p>
-          </div> */}
-          <div>
+          <div className="heading">
+            <h4>Unveiling the Real Me</h4>
+            <p>Revealing the Person Behind the Story</p>
+          </div>
+          <div className="details">
             <h6>
-              I'm a <span>penultimate-year</span> undergraduate majoring in{" "}
-              <span>Computer Science</span> with a minor of <span>Finance</span>{" "}
-              at The Hong Kong Polytechnic University.
+              I am a penultimate-year <span>Computer Science</span> student with
+              a minor in <span>Finance</span> at{" "}
+              <a href="https://www.topuniversities.com/universities/hong-kong-polytechnic-university" target="_blank">
+                <span>PolyU</span>
+              </a>
+              .
             </h6>
             <p>
-              I enjoy working! Yes, you heard it right. I absolutely love
-              working on projects, especially those that can have a positive
-              impact on society. It's like solving the pressing issues
-              experienced by everyone!
+              I work for 12 hours, followed by a 1-hour lunch, a 1-hour dinner,
+              a 2-hour break, and 8 hours of sleep every day.{" "}
             </p>
             <h6>
               I am <span>ambitious</span> and <span>hardworking</span> to
               achieve my goals with an <span>optimistic</span> mindset.
             </h6>
             <p>
-              By the way, check out the video on the --{">"}, which marks the
-              first major milestone in my life!
-            </p>
-            <div>
+              Watch the video on the right, find my coding skills below, and
+              feel free to grab my resume{" "}
               <a href="./Resume.pdf" download>
-                <button>
-                  You can also grab my amazing <span>Resume</span> here!
-                </button>
+                <span>here</span>
               </a>
-            </div>
+              !
+            </p>
           </div>
           <div className="wrapper">
             <iframe
@@ -118,26 +118,29 @@ function App() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <p>my vid</p>
+          </div>
+          <div className="skills">
+            <img src="s1.png" />
+            <img src="s2.png" />
+            <img src="s3.png" />
+            <img src="s4.png" />
+            <img src="s5.png" />
+            <img src="s6.png" />
+            <img src="s7.png" />
+            <img src="s8.png" />
+            <img src="s9.png" />
+            <img src="s10.png" />
+            <img src="s11.png" />
+            <img src="s12.png" />
+            <img src="s13.png" />
+            <img src="s14.png" />
           </div>
         </div>
-        <div id="skills">
-          <img src="s1.png" />
-          <img src="s2.png" />
-          <img src="s3.png" />
-          <img src="s4.png" />
-          <img src="s5.png" />
-          <img src="s6.png" />
-          <img src="s7.png" />
-          <img src="s8.png" />
-          <img src="s9.png" />
-          <img src="s10.png" />
-          <img src="s11.png" />
-          <img src="s12.png" />
-          <img src="s13.png" />
-          <img src="s14.png" />
-        </div>
         <div id="experiences">
+          <div className="heading">
+            <h4>Journey of Success</h4>
+            <p>Moments from My Career Path</p>
+          </div>
           {/* FIRST */}
           <div className="images">
             {/* <img src="w11.png" alt="Image 1" className="image1" />
@@ -148,51 +151,38 @@ function App() {
             <div className="line"></div>
           </div>
           <div className="details">
-            <p>July 2024</p>
+            <p>
+              <span>July 2024</span>
+            </p>
             <h5>Incoming Software Engineer Intern</h5>
             <a href="https://www.careerhackers.io/pro/">
               <p>
-                Career Hackers{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box-arrow-up-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                  />
-                </svg>
+                <i>
+                  Career Hackers{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                    />
+                  </svg>
+                </i>
               </p>
             </a>
-
-            {/* <ul>
-              <li>
-                <p>
-                  Secured admission to the Undergraduate Research and Innovation
-                  Scheme with a grant of HK$30,000, supervised by Dr. Qixin
-                  Wang.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Currently researching and proving the NP-hardness of an
-                  algorithm for intra-cell channel time-slot scheduling for fire
-                  evacuation.
-                </p>
-              </li>
-            </ul> */}
           </div>
           {/* SECOND */}
           <div className="images">
-            <img src="w4.png" className="image1" />
+            <div className="image1"></div>
             <img src="w4.png" className="image2" />
           </div>
           <div className="dotline">
@@ -200,30 +190,35 @@ function App() {
             <div className="line"></div>
           </div>
           <div className="details">
-            <p>June 2024 - Present</p>
+            <p>
+              <span>June 2024 - Present</span>
+            </p>
             <h5>Software Engineer Intern</h5>
             <a href="https://www.castco.com.hk/eng/home">
               <p>
-                Castco Testing Centre Limited{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box-arrow-up-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                  />
-                </svg>
+                <i>
+                  Castco Testing Centre Limited{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                    />
+                  </svg>
+                </i>
               </p>
             </a>
+            <br />
             <ul>
               <li>
                 <p>
@@ -244,7 +239,7 @@ function App() {
           </div>
           {/* THIRD */}
           <div className="images">
-            <img src="w31.png" className="image1" />
+            <div className="image1"></div>
             <img src="w32.png" className="image2" />
           </div>
           <div className="dotline">
@@ -252,30 +247,35 @@ function App() {
             <div className="line"></div>
           </div>
           <div className="details">
-            <p>August 2023 - Present</p>
+            <p>
+              <span>August 2023 - Present</span>
+            </p>
             <h5>Undergraduate Researcher</h5>
             <a href="https://www.polyu.edu.hk/en/gs/">
               <p>
-                Graduate School, The Hong Kong Polytechnic University{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box-arrow-up-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                  />
-                </svg>
+                <i>
+                  Graduate School, The Hong Kong Polytechnic University{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                    />
+                  </svg>
+                </i>
               </p>
             </a>
+            <br />
             <ul>
               <li>
                 <p>
@@ -294,7 +294,7 @@ function App() {
           </div>
           {/* FOURTH */}
           <div className="images">
-            <img src="w21.png" className="image1" />
+            <div className="image1"></div>
             <img src="w22.png" className="image2" />
           </div>
           <div className="dotline">
@@ -302,30 +302,35 @@ function App() {
             <div className="line"></div>
           </div>
           <div className="details">
-            <p>June 2023 - August 2023</p>
+            <p>
+              <span>June 2023 - August 2023</span>
+            </p>
             <h5>Data Analyst Intern</h5>
             <a href="https://hutchisonports.com/en/">
               <p>
-                Hutchison Port Holdings{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box-arrow-up-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                  />
-                </svg>
+                <i>
+                  Hutchison Port Holdings{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                    />
+                  </svg>
+                </i>
               </p>
             </a>
+            <br />
             <ul>
               <li>
                 <p>
@@ -344,176 +349,65 @@ function App() {
           </div>
           {/* FIFTH */}
           <div className="images">
-            <img src="w1.png" className="image1" />
+            <div className="image1"></div>
             <img src="w1.png" className="image2" />
           </div>
           <div className="dotline">
             <div className="dot"></div>
           </div>
           <div className="details">
-            <p>February 2023 - August 2023</p>
+            <p>
+              <span>February 2023 - August 2023</span>
+            </p>
             <h5>Student Research Assistant</h5>
             <a href="https://www.polyu.edu.hk/comp/">
               <p>
-                Department of Computing, The Hong Kong Polytechnic University{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box-arrow-up-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                  />
-                </svg>
+                <i>
+                  Department of Computing, The Hong Kong Polytechnic University
+                  {"  "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box-arrow-up-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                    />
+                  </svg>
+                </i>
               </p>
             </a>
+            <br />
             <ul>
               <li>
                 <p>
-                  Installed LoRa communication on Raspberry Pi using MKR WAN
-                  1310, enhancing the system’s wireless communication
-                  capabilities.
+                  Installed <span>LoRa</span> communication on{" "}
+                  <span>Raspberry Pi</span> using <span>MKR WAN 1310</span>,
+                  enhancing the system’s wireless communication capabilities.
                 </p>
               </li>
               <li>
                 <p>
                   Conducted an experiment on a server-client connection using
-                  SSH and X Window to optimize the communication infrastructure.
+                  <span>SSH</span> and <span>X Window</span> to optimize the
+                  communication infrastructure.
                 </p>
               </li>
             </ul>
           </div>
-
-          {/* 
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div>
-            <h4>August 2023 - Present</h4>
-            <h2>Vice President</h2>
-            <h3>Google Developer Student Clubs PolyU</h3>
-            <ul>
-              <li>
-                Collaborate with technical leads to organize engaging workshops
-                covering topics related to artificial intelligence.
-              </li>
-              <li>
-                Prepare and organize for the upcoming hackathon, PolyHack,
-                ensuring a creative and collaborative environment for
-                participants.
-              </li>
-            </ul>
-          </div>
-          <a href="https://gdsc.community.dev/the-hong-kong-polytechnic-university/">
-            <button>Visit Website</button>
-          </a>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div>
-            <h4>December 2022 - Present</h4>
-            <h2>Class Representative</h2>
-            <h3>
-              Department of Computing, The Hong Kong Polytechnic University
-            </h3>
-            <ul>
-              <li>
-                Chosen by faculty members to actively participate in semester
-                meetings with professors addressing student learning
-                experiences.
-              </li>
-              <li>
-                Actively gathering constructive feedback from peers to
-                contribute to the continuous refinement of the curriculum.
-              </li>
-            </ul>
-          </div>
-          <a href="https://www.polyu.edu.hk/en/comp/">
-            <button>Visit Website</button>
-          </a>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div>
-            <h4>March 2023 - August 2023</h4>
-            <h2>Project Volunteer</h2>
-            <h3>African Evangelistic Enterprise</h3>
-            <ul>
-              <li>
-                Installed solar-powered electricity to 400 households in rural
-                areas, illuminating lives and fostering sustainable energy
-                solutions.
-              </li>
-              <li>
-                Implemented an advanced IoT system with an MPPT Controller,
-                improving data tracking for more effective monitoring and
-                analysis.
-              </li>
-            </ul>
-          </div>
-          <a href="https://www.aeerwanda.ngo/">
-            <button>Visit Website</button>
-          </a>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div>
-            <h4>November 2022 - June 2023</h4>
-            <h2>Innovation and Technology</h2>
-            <h3>PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊</h3>
-            <ul>
-              <li>
-                Crafted a curriculum tailored for primary and secondary school
-                students, focusing on the development of RC Cars.
-              </li>
-              <li>
-                Spearheaded the modification and enhancement of the team’s
-                website, with a keen emphasis on improving the UI/UX.
-              </li>
-            </ul>
-          </div>
-          <a href="https://hkpolyuracing.com">
-            <button>Visit Website</button>
-          </a>
-          <div className="dotline">
-            <div className="dot"></div>
-          </div>
-          <div>
-            <h4>October 2022 - July 2023</h4>
-            <h2>Technical Lead</h2>
-            <h3>Google Developer Student Clubs PolyU</h3>
-            <ul>
-              <li>
-                Facilitated introductory workshops on Lego Mindstorms EV3,
-                catering to beginners and fostering hands-on learning
-                experiences.
-              </li>
-              <li>
-                Collaborated seamlessly with executive committee members from
-                other divisions to plan and prepare for upcoming events.
-              </li>
-            </ul>
-          </div>
-          <a href="https://gdsc.community.dev/the-hong-kong-polytechnic-university/">
-            <button>Visit Website</button>
-          </a> */}
         </div>
         <div id="projects">
           <div className="heading">
-            <h4>Unleashing Creative Excellence</h4>
-            <p>Innovative and Inspiring Works. Click to see more.</p>
+            <h4>Inspiring Creations</h4>
+            <p>Ventures That Pushed Boundaries</p>
           </div>
           <div className="inner">
             <input type="radio" name="slider" id="s1" />
@@ -594,36 +488,38 @@ function App() {
         </div>
         <div id="activities">
           <div className="heading">
-            <h4>Demonstrating Leadership Through Activities</h4>
-            <p>Empowering Teams with Inspiring Endeavors. Dive deeper.</p>
+            <h4>Leading by Example</h4>
+            <p>Making a Difference through Guiding Others</p>
           </div>
           <div className="img-left">
             <img src="l1.jpg" />
             <div className="infos-right">
               <div>
                 <h4>Student Ambassador</h4>
-                <p>
-                  <a href="https://competition.acrc.hku.hk/">
-                    HSBC/HKU Business Case Competition{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-box-arrow-up-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                      />
-                    </svg>
-                  </a>
-                </p>
+                <a href="https://competition.acrc.hku.hk/">
+                  <p>
+                    <i>
+                      HSBC/HKU Business Case Competition{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-box-arrow-up-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                        />
+                      </svg>
+                    </i>
+                  </p>
+                </a>
               </div>
               <div className="details-right">
                 <ul>
@@ -642,7 +538,9 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>May 2024 | Hong Kong SAR</p>
+                <p>
+                  <span>May 2024 | Hong Kong SAR</span>
+                </p>
               </div>
             </div>
           </div>
@@ -656,24 +554,26 @@ function App() {
                   target="_blank"
                 >
                   <p>
-                    Google Developer Student Clubs PolyU{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-box-arrow-up-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                      />
-                    </svg>
+                    <i>
+                      Google Developer Student Clubs PolyU{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-box-arrow-up-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                        />
+                      </svg>
+                    </i>
                   </p>
                 </a>
               </div>
@@ -694,7 +594,9 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Aug 2023 - Present | Hong Kong SAR</p>
+                <p>
+                  <span>Aug 2023 - Present | Hong Kong SAR</span>
+                </p>
               </div>
             </div>
           </div>
@@ -743,7 +645,9 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Mar 2023 - Aug 2023 | Rwanda, Africa</p>
+                <p>
+                  <span>Mar 2023 - Aug 2023 | Rwanda, Africa</span>
+                </p>
               </div>
             </div>
           </div>
@@ -754,24 +658,26 @@ function App() {
                 <h4>Technology Innovation Lead</h4>
                 <a href="https://hkpolyuracing.com/">
                   <p>
-                    PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-box-arrow-up-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                      />
-                    </svg>
+                    <i>
+                      PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-box-arrow-up-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                        />
+                      </svg>
+                    </i>
                   </p>
                 </a>
               </div>
@@ -792,7 +698,9 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Nov 2022 - Jun 2023 | Hong Kong SAR</p>
+                <p>
+                  <span>Nov 2022 - Jun 2023 | Hong Kong SAR</span>
+                </p>
               </div>
             </div>
           </div>
@@ -806,24 +714,26 @@ function App() {
                   target="_blank"
                 >
                   <p>
-                    Google Developer Student Clubs PolyU{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-box-arrow-up-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                      />
-                    </svg>
+                    <i>
+                      Google Developer Student Clubs PolyU{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-box-arrow-up-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                        />
+                      </svg>
+                    </i>
                   </p>
                 </a>
               </div>
@@ -844,7 +754,9 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Oct 2022 - Jul 2023 | Hong Kong SAR</p>
+                <p>
+                  <span>Oct 2022 - Jul 2023 | Hong Kong SAR</span>
+                </p>
               </div>
             </div>
           </div>
@@ -855,24 +767,26 @@ function App() {
                 <h4>Country Representative</h4>
                 <a href="https://wro-association.org/">
                   <p>
-                    World Robot Olympiad{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-box-arrow-up-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                      />
-                    </svg>
+                    <i>
+                      World Robot Olympiad{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-box-arrow-up-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                        />
+                      </svg>
+                    </i>
                   </p>
                 </a>
               </div>
@@ -893,22 +807,26 @@ function App() {
                 </ul>
               </div>
               <div>
-                <p>Jun 2019 - Nov 2020 | Gyor, Hungary</p>
+                <p>
+                  <span>Jun 2019 - Nov 2020 | Gyor, Hungary</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div id="awards">
           <div className="heading">
-            <h4>Celebrating a Legacy of Excellence</h4>
-            <p>Recognitions Highlighting Dedication. Explore more.</p>
+            <h4>Celebrating Excellence</h4>
+            <p>Honors and Recognitions that Shine Bright</p>
           </div>
           <div></div>
           <div></div>
           <div className="box">
             <img src="a9.jpg" />
             <div>
-              <h5>Presidential Student Leadership Award</h5>
+              <h5>
+                <span>Presidential Student Leadership Award</span>
+              </h5>
               <p>The Hong Kong Polytechnic University</p>
               <p>March 26, 2024</p>
             </div>
@@ -916,7 +834,9 @@ function App() {
           <div className="box">
             <img src="a8.jpg" />{" "}
             <div>
-              <h5>Merit Award - Digital Economy</h5>
+              <h5>
+                <span>Merit Award - Digital Economy</span>
+              </h5>
               <p>Hong Kong Techathon</p>
               <p>January 28, 2024</p>
             </div>
@@ -924,7 +844,9 @@ function App() {
           <div className="box">
             <img src="a7.jpeg" />{" "}
             <div>
-              <h5>2nd Runner Up & Best GIS Award</h5>
+              <h5>
+                <span>2nd Runner Up & Best GIS Award</span>
+              </h5>
               <p>PolyHack</p>
               <p>June 24, 2023</p>
             </div>
@@ -932,7 +854,9 @@ function App() {
           <div className="box">
             <img src="a1.jpg" />{" "}
             <div>
-              <h5>Bronze Medalist & Best Innovation Award</h5>
+              <h5>
+                <span>Bronze Medalist & Best Innovation Award</span>
+              </h5>
               <p>World Robot Olympiad</p>
               <p>November 15, 2020</p>
             </div>
@@ -940,7 +864,9 @@ function App() {
           <div className="box">
             <img src="a3.jpg" />{" "}
             <div>
-              <h5>Gold Medalist</h5>
+              <h5>
+                <span>Gold Medalist</span>
+              </h5>
               <p>Indonesian Robotics Olympiad</p>
               <p>September 7, 2019</p>
             </div>
@@ -948,13 +874,16 @@ function App() {
           <div className="box">
             <img src="a4.jpg" />{" "}
             <div>
-              <h5>1st Place Winner</h5>
+              <h5>
+                <span>1st Place Winner</span>
+              </h5>
               <p>Mechatronics Day 4.0</p>
               <p>October 21, 2018</p>
             </div>
           </div>
         </div>
       </main>
+      <footer></footer>
     </div>
   );
 }
