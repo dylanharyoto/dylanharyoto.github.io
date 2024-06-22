@@ -842,7 +842,7 @@ function App() {
             </div>
           </div>
           <div className="box">
-            <img src="a7.jpeg" />{" "}
+            <img src="a7.jpg" />{" "}
             <div>
               <h5>
                 <span>2nd Runner Up & Best GIS Award</span>
