@@ -190,7 +190,6 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid red;
 }
 #opening-inner > hr {
     width: 100%;
@@ -233,7 +232,6 @@ nav a:hover {
     flex-direction: column;
     row-gap: 20px;
     width: 100%;
-    border: 1px solid red;
 }
 #about > .skills {
     position: relative;
@@ -250,7 +248,6 @@ nav a:hover {
     margin: 0 20px;
 }
 #about .wrapper {
-    border: 1px solid red;
     position: relative;
     padding-bottom: 56.25%;
     width: 100%;
@@ -275,7 +272,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    border: 1px solid red;
 }
 #experiences > .box {
     display: grid;
@@ -310,8 +306,6 @@ nav a:hover {
 #experiences > .box > .image-box {
     position: relative;
 }
-
-
 
 /* PROJECTS */
 #projects {
@@ -581,7 +575,6 @@ footer > .fields > input {
     #opening-inner, #about, #experiences, #projects, #activities, #awards {
         padding-left: 5vh;
         padding-right: 5vh;
-        border: 1px solid red;
     }
     #opening-inner > div > input {
         width: 100%;
@@ -589,7 +582,7 @@ footer > .fields > input {
     #about {
         display: flex;
         flex-direction: column;
-        row-gap: 5px;
+        row-gap: 20px;
         height: auto;
     }
     #about > .skills {
@@ -610,8 +603,8 @@ footer > .fields > input {
         row-gap: 70px;
     }
     #experiences img, #experiences > .box > .image-box > .image-border {
-        height: 300px;
-        width: 400px;
+        height: 225px;
+        width: 300px;
     }
     #experiences > .box {
         display: flex;
@@ -622,8 +615,16 @@ footer > .fields > input {
         margin: 0;
     }
     #projects > .inner > .boxes {
-        width: 250px;
-        perspective: 350px;
+        width: 155px;
+        perspective: 1500px;
+    }
+    #projects > .inner > .boxes > label {
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 300px;
+    }
+    #projects > .inner > .boxes > label > video {
+        height: 150px;
     }
     #activities {
         top: calc(100vh - 145vh);
@@ -641,8 +642,8 @@ footer > .fields > input {
     }
     #activities > .img-left > img, 
     #activities > .img-right > img {
-        width: 400px;
-        height: 300px;
+        width: 300px;
+        height: 225px;
     }
     #activities > .img-left > .infos-right,
     #activities > .img-right > .infos-left {
@@ -661,7 +662,7 @@ footer > .fields > input {
         top: calc(100vh - 160vh);
     }
     #awards > .box > img {
-        height: 250px;
+        height: 180px;
     }
     footer {
         display: none;
