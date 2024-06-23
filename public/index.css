@@ -84,16 +84,16 @@ button {
     height: 100%;
     padding: 120px 20px;
 }
-.dot {
+.dotline > .dot {
     width: 10px;
     height: 10px;
     border: 5px solid #34fb7b;
     border-radius: 50%;
     margin: 0 auto;
 }
-.line {
+.dotline > .line {
     width: 10%;
-    height: 132%;
+    height: 127%;
     background-color: #34fb7b;
     margin: 0 auto;
 }
@@ -116,7 +116,7 @@ header {
     width: 75%;
     position: fixed;
     margin-top: 10px;
-    z-index: 2;
+    z-index: 3;
 }
 nav {
     display: grid;
@@ -127,10 +127,10 @@ nav {
     align-items: center;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-nav > #nav-left {
+nav > .nav-left {
     justify-content: flex-start;
 }
-nav > #nav-right {
+nav > .nav-right {
     justify-content: flex-end;
 }
 nav > div {
@@ -154,7 +154,7 @@ nav a:hover {
 /* OPENING */
 #opening {
     position: relative;
-    padding: 0px 65vh;
+    padding: 0px 140px;
     left: 0;
     top: 0;
     height: 100vh;
@@ -185,11 +185,12 @@ nav a:hover {
 }
 #opening-inner {
     height: 100vh;
-    padding: 0 200px;
+    padding: 0 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    border: 1px solid red;
 }
 #opening-inner > hr {
     width: 100%;
@@ -212,10 +213,10 @@ nav a:hover {
 }
 /* ABOUT */
 #about {
-    background: linear-gradient(to bottom, rgba(4, 12, 20, 0) 0%, rgba(4, 12, 20, 1) 7%, rgba(4, 12, 20, 1) 100%, rgba(4, 12, 20, 0) 100%);    height: 100vh;
-    padding: 100px 140px 0px;
+    background: linear-gradient(to bottom, rgba(4, 12, 20, 0) 0%, rgba(4, 12, 20, 1) 5%, rgba(4, 12, 20, 1) 100%, rgba(4, 12, 20, 0) 100%);    height: 100vh;
+    padding: 100px 140px 100px;
     position: relative;
-    top: calc(100vh - 110vh); 
+    top: calc(100vh - 110vh);
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
@@ -231,10 +232,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    width: 100%;
+    border: 1px solid red;
 }
 #about > .skills {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
@@ -245,62 +249,69 @@ nav a:hover {
     height: 40px;
     margin: 0 20px;
 }
+#about .wrapper {
+    border: 1px solid red;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
 #about iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    width: 98.5%;
+    height: 97%;
     border: 3px solid #34fb7b;
     border-radius: 20px ;
 }
-#about .wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    margin-bottom: 1.25rem;
-}
+
 
 /* EXPERIENCES */
 #experiences {    
+    padding: 100px 140px 170px;
     position: relative;
     height: auto;
-    background: linear-gradient(to bottom, rgba(12, 28, 36, 0) 0%, rgba(12, 28, 36, 1) 3%, rgba(12, 28, 36, 1) 100%, rgba(12, 28, 36, 0) 100%);
+    background: linear-gradient(to bottom, rgba(12, 28, 36, 0) 0%, rgba(12, 28, 36, 1) 2%, rgba(12, 28, 36, 1) 100%, rgba(12, 28, 36, 0) 100%);
     top: calc(100vh - 120vh); 
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    border: 1px solid red;
+}
+#experiences > .box {
     display: grid;
     grid-template-columns: 40% 5% 55%;
-    row-gap: 100px;
-    padding: 100px 140px 170px;
 }
-#experiences img, #experiences .image1 {
-    width: 90%;
+#experiences img, #experiences > .box > .image-box > .image-border {
     height: 300px;
+    width: 100%;
     border: 3px solid #34fb7b;
     border-radius: 20px;
+}
+#experiences img {
+    position: relative;
+    z-index: 2;
+}
+#experiences > .box > .image-box > .image-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
 }
 #experiences > .heading {
     grid-column: 1 / span 3;
     text-align: center;
     line-height: 60px;
 }
-#experiences > .details {
+#experiences > .box > .details {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#experiences > .images {
+#experiences > .box > .image-box {
     position: relative;
 }
-#experiences > .images > .image1,
-#experiences > .images > .image2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#experiences .images .image2 {
-    margin-top: 10px;
-    margin-left: 10px;
-}
+
+
 
 /* PROJECTS */
 #projects {
@@ -450,6 +461,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: justify;
 }
 #activities > .img-left > .infos-right {
     text-align: right;
@@ -540,8 +552,124 @@ footer > .fields > input {
     flex-direction: column;
 }
 /* SIGNIFIERS */
+@media only screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+    /* (16 * screenWidth) / 414 */
+    h1 {
+        font-size: 3.86rem; 
+    }
+    h2 {
+        font-size: 2.32rem;
+    }
+    h3 {
+        font-size: 1.94rem;
+    }
+    h4 {
+        font-size: 1.75rem;
+    }
+    h5 {
+        font-size: 1.35rem;
+    }
+    h6 {
+        font-size: 1.16rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #opening-inner, #about, #experiences, #projects, #activities, #awards {
+        padding-left: 5vh;
+        padding-right: 5vh;
+        border: 1px solid red;
+    }
+    #opening-inner > div > input {
+        width: 100%;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        height: auto;
+    }
+    #about > .skills {
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    #about > .skills > img {
+        height: 25px;
+        margin: 0 8px;
+    }
+    .dotline {
+        display: none;
+    }
+    #experiences {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+    }
+    #experiences img, #experiences > .box > .image-box > .image-border {
+        height: 300px;
+        width: 400px;
+    }
+    #experiences > .box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    #experiences > .box > .details {
+        margin: 0;
+    }
+    #projects > .inner > .boxes {
+        width: 250px;
+        perspective: 350px;
+    }
+    #activities {
+        top: calc(100vh - 145vh);
+    }
+    #activities .img-left,
+    #activities .img-right {
+        display: flex;
+        align-items: center;
+    }
+    #activities .img-left {
+        flex-direction: column;
+    }
+    #activities .img-right {
+        flex-direction: column;
+    }
+    #activities > .img-left > img, 
+    #activities > .img-right > img {
+        width: 400px;
+        height: 300px;
+    }
+    #activities > .img-left > .infos-right,
+    #activities > .img-right > .infos-left {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #activities > .img-right > .infos-left > .details-left,
+    #activities > .img-left > .infos-right > .details-right {
+        left: 0;
+        width: 90%;
+    }
+    #awards {
+        display: flex;
+        flex-direction: column;
+        top: calc(100vh - 160vh);
+    }
+    #awards > .box > img {
+        height: 250px;
+    }
+    footer {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 1500px) {
-    #about, #experiences, #projects, #activities, #awards {
+    #opening-inner, #about, #experiences, #projects, #activities, #awards {
         padding-left: 40vh;
         padding-right: 40vh;
     }
