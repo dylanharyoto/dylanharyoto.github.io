@@ -6,14 +6,11 @@ function App() {
       behavior: "smooth",
     });
   };
-  var screenWidth = window.innerWidth;
-  console.log("Screen width: " + screenWidth + " pixels");
-
   return (
     <div id="body">
       <header>
         <nav>
-          <div id="nav-left">
+          <div className="nav-left">
             <div className="icon-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +37,7 @@ function App() {
             <a onClick={() => scrollSection("activities")}>Activities</a>
             <a onClick={() => scrollSection("awards")}>Awards</a>
           </div>
-          <div id="nav-right">
+          <div className="nav-right">
             <a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,8 +103,8 @@ function App() {
               achieve my goals with an <span>optimistic</span> mindset.
             </h6>
             <p>
-              Watch the video on the right, find my coding skills below, and
-              feel free to grab my resume{" "}
+              Watch the video, find my coding skills below, and feel free to
+              grab my resume{" "}
               <a href="./Resume.pdf" download>
                 <span>here</span>
               </a>
@@ -146,266 +143,276 @@ function App() {
             <p>Moments from My Career Path</p>
           </div>
           {/* FIRST */}
-          <div className="images">
-            {/* <img src="w11.png" alt="Image 1" className="image1" />
-            <img src="w12.png" alt="Image 2" className="image2" /> */}
-          </div>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div className="details">
-            <p>
-              <span>July 2024</span>
-            </p>
-            <h5>Incoming Software Engineer Intern</h5>
-            <a href="https://www.careerhackers.io/pro/" target="_blank">
+          <div className="box">
+            <div className="image-box">
+              <div className="image-border"></div>
+              <img src="" />
+            </div>
+            <div className="dotline">
+              <div className="dot"></div>
+              <div className="line"></div>
+            </div>
+            <div className="details">
               <p>
-                <i>
-                  Career Hackers{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </i>
+                <span>July 2024</span>
               </p>
-            </a>
+              <h5>Incoming Software Engineer Intern</h5>
+              <a href="https://www.careerhackers.io/pro/" target="_blank">
+                <p>
+                  <i>
+                    Career Hackers{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </i>
+                </p>
+              </a>
+            </div>
           </div>
           {/* SECOND */}
-          <div className="images">
-            <div className="image1"></div>
-            <img src="w4.png" className="image2" />
-          </div>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div className="details">
-            <p>
-              <span>June 2024 - Present</span>
-            </p>
-            <h5>Software Engineer Intern</h5>
-            <a href="https://www.castco.com.hk/eng/home" target="_blank">
+          <div className="box">
+            <div className="image-box">
+              <div className="image-border"></div>
+              <img src="w4.png" />
+            </div>
+            <div className="dotline">
+              <div className="dot"></div>
+              <div className="line"></div>
+            </div>
+            <div className="details">
               <p>
-                <i>
-                  Castco Testing Centre Limited{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </i>
+                <span>June 2024 - Present</span>
               </p>
-            </a>
-            <br />
-            <ul>
-              <li>
+              <h5>Software Engineer Intern</h5>
+              <a href="https://www.castco.com.hk/eng/home" target="_blank">
                 <p>
-                  Deployed <span>Traccar</span> on <span>Linux</span>, connected
-                  to <span>Microsoft SQL Server</span>, and used{" "}
-                  <span>API</span> in <span>JavaScript</span> for real-time
-                  data.
+                  <i>
+                    Castco Testing Centre Limited{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </i>
                 </p>
-              </li>
-              <li>
-                <p>
-                  Improved the internal company app for product registration
-                  using <span>C#</span> and <span>SQL</span> by adding detailed
-                  filtering options.
-                </p>
-              </li>
-            </ul>
+              </a>
+              <br />
+              <ul>
+                <li>
+                  <p>
+                    Deployed <span>Traccar</span> on <span>Linux</span>,
+                    connected to <span>Microsoft SQL Server</span>, and used{" "}
+                    <span>API</span> in <span>JavaScript</span> for real-time
+                    data.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Improved the internal company app for product registration
+                    using <span>C#</span> and <span>SQL</span> by adding
+                    detailed filtering options.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           {/* THIRD */}
-          <div className="images">
-            <div className="image1"></div>
-            <img src="w32.png" className="image2" />
-          </div>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div className="details">
-            <p>
-              <span>August 2023 - Present</span>
-            </p>
-            <h5>Undergraduate Researcher</h5>
-            <a href="https://www.polyu.edu.hk/en/gs/" target="_blank">
+          <div className="box">
+            <div className="image-box">
+              <div className="image-border"></div>
+              <img src="w3.png" />
+            </div>
+            <div className="dotline">
+              <div className="dot"></div>
+              <div className="line"></div>
+            </div>
+            <div className="details">
               <p>
-                <i>
-                  Graduate School, The Hong Kong Polytechnic University{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </i>
+                <span>August 2023 - Present</span>
               </p>
-            </a>
-            <br />
-            <ul>
-              <li>
+              <h5>Undergraduate Researcher</h5>
+              <a href="https://www.polyu.edu.hk/en/gs/" target="_blank">
                 <p>
-                  <span>1 out of 100</span> selected from <span>400+</span>{" "}
-                  undergraduates to conduct research with a grant of{" "}
-                  <span>HK$30,000</span>.
+                  <i>
+                    Graduate School, The Hong Kong Polytechnic University{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </i>
                 </p>
-              </li>
-              <li>
-                <p>
-                  Designed an algorithm for intra-cell channel time scheduling{" "}
-                  <span>(NP-Hard)</span> with a <span>25%</span> success rate.
-                </p>
-              </li>
-            </ul>
+              </a>
+              <br />
+              <ul>
+                <li>
+                  <p>
+                    <span>1 out of 100</span> selected from <span>400+</span>{" "}
+                    undergraduates to conduct research with a grant of{" "}
+                    <span>HK$30,000</span>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Designed an algorithm for intra-cell channel time scheduling{" "}
+                    <span>(NP-Hard)</span> with a <span>25%</span> success rate.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           {/* FOURTH */}
-          <div className="images">
-            <div className="image1"></div>
-            <img src="w22.png" className="image2" />
-          </div>
-          <div className="dotline">
-            <div className="dot"></div>
-            <div className="line"></div>
-          </div>
-          <div className="details">
-            <p>
-              <span>June 2023 - August 2023</span>
-            </p>
-            <h5>Data Analyst Intern</h5>
-            <a href="https://hutchisonports.com/en/" target="_blank">
+          <div className="box">
+            <div className="image-box">
+              <div className="image-border"></div>
+              <img src="w2.png" />
+            </div>
+            <div className="dotline">
+              <div className="dot"></div>
+              <div className="line"></div>
+            </div>
+            <div className="details">
               <p>
-                <i>
-                  Hutchison Port Holdings{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </i>
+                <span>June 2023 - August 2023</span>
               </p>
-            </a>
-            <br />
-            <ul>
-              <li>
+              <h5>Data Analyst Intern</h5>
+              <a href="https://hutchisonports.com/en/" target="_blank">
                 <p>
-                  Utilized <span>PowerBI</span> to perform data analysis and
-                  comparison on financial data from shipping line companies.
+                  <i>
+                    Hutchison Port Holdings{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </i>
                 </p>
-              </li>
-              <li>
-                <p>
-                  Used <span>Tableau</span> and released market reports about
-                  import and export statistics of potential countries for
-                  expansion.
-                </p>
-              </li>
-            </ul>
+              </a>
+              <br />
+              <ul>
+                <li>
+                  <p>
+                    Utilized <span>PowerBI</span> to perform data analysis and
+                    comparison on financial data from shipping line companies.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Used <span>Tableau</span> and released market reports about
+                    import and export statistics of potential countries for
+                    expansion.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           {/* FIFTH */}
-          <div className="images">
-            <div className="image1"></div>
-            <img src="w1.png" className="image2" />
-          </div>
-          <div className="dotline">
-            <div className="dot"></div>
-          </div>
-          <div className="details">
-            <p>
-              <span>February 2023 - August 2023</span>
-            </p>
-            <h5>Student Research Assistant</h5>
-            <a href="https://www.polyu.edu.hk/comp/" target="_blank">
+          <div className="box">
+            <div className="image-box">
+              <div className="image-border"></div>
+              <img src="w1.png" />
+            </div>
+            <div className="dotline">
+              <div className="dot"></div>
+            </div>
+            <div className="details">
               <p>
-                <i>
-                  Dept. of Computing, The Hong Kong Polytechnic University
-                  {"  "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                    />
-                  </svg>
-                </i>
+                <span>February 2023 - August 2023</span>
               </p>
-            </a>
-            <br />
-            <ul>
-              <li>
+              <h5>Student Research Assistant</h5>
+              <a href="https://www.polyu.edu.hk/comp/" target="_blank">
                 <p>
-                  Installed <span>LoRa</span> communication on{" "}
-                  <span>Raspberry Pi</span> using <span>MKR WAN 1310</span>,
-                  enhancing the system’s wireless communication capabilities.
+                  <i>
+                    Dept. of Computing, The Hong Kong Polytechnic University
+                    {"  "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                      />
+                    </svg>
+                  </i>
                 </p>
-              </li>
-              <li>
-                <p>
-                  Conducted an experiment on a server-client connection using
-                  <span>SSH</span> and <span>X Window</span> to optimize the
-                  communication.
-                </p>
-              </li>
-            </ul>
+              </a>
+              <br />
+              <ul>
+                <li>
+                  <p>
+                    Installed <span>LoRa</span> communication on{" "}
+                    <span>Raspberry Pi</span> using <span>MKR WAN 1310</span>,
+                    enhancing the system’s wireless communication capabilities.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Conducted an experiment on a server-client connection using
+                    <span>SSH</span> and <span>X Window</span> to optimize the
+                    communication.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div id="projects">
@@ -463,7 +470,7 @@ function App() {
                 </video>
               </label>
               <label htmlFor="s5" id="slide5">
-                <h4>More to come !</h4>
+                <h4>More to come!</h4>
                 <p>Visit my GitHub to see other projects!</p>
                 <a
                   href="https://github.com/dylanharyoto?tab=repositories"
@@ -663,7 +670,7 @@ function App() {
                 <a href="https://hkpolyuracing.com/">
                   <p>
                     <i>
-                      PolyU E-Formula Racing Team - 理工大學電動方程式賽車隊{" "}
+                      PolyU E-Formula Racing Team{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
