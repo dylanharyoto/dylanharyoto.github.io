@@ -4,7 +4,7 @@ const experiences = [
   {
     companyLogo: "https://tinyurl.com/bdhxyf7m",
     companyName: "BNP Paribas",
-    companyWeb: "https://www2.deloitte.com/cn/en.html",
+    companyWeb: "https://www.bnpparibas.com.hk/en/",
     position: "Incoming Software Engineer Intern",
     timeline: "September 2024 - Present",
   },
