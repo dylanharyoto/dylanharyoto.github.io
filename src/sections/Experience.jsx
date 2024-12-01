@@ -1,13 +1,13 @@
 import React from "react";
 import ExperienceBox from "../components/ExperienceBox";
 const experiences = [
-  {
-    companyLogo: "https://tinyurl.com/bdhxyf7m",
-    companyName: "BNP Paribas",
-    companyWeb: "https://www.bnpparibas.com.hk/en/",
-    position: "Incoming Software Engineer Intern",
-    timeline: "September 2024 - Present",
-  },
+  // {
+  //   companyLogo: "https://tinyurl.com/bdhxyf7m",
+  //   companyName: "BNP Paribas",
+  //   companyWeb: "https://www.bnpparibas.com.hk/en/",
+  //   position: "Incoming Software Engineer Intern",
+  //   timeline: "September 2024 - Present",
+  // },
   {
     companyLogo: "https://tinyurl.com/vpdpxzp5",
     companyName: "Deloitte",
@@ -42,17 +42,6 @@ const experiences = [
       "Enhanced filtering on three product registration apps by fixing backend SQL errors and adding front-end fields with undo functionality using Xamarin and C#.",
   },
   {
-    companyLogo: "https://shorturl.at/3weB4",
-    companyName: "Graduate School, The Hong Kong Polytechnic University",
-    companyWeb: "https://www.polyu.edu.hk/en/gs/",
-    position: "Undergraduate Researcher",
-    timeline: "August 2023 - Present",
-    detail1:
-      "1 out of 100 selected from 400+ undergraduates to conduct research with a grant of HK$30,000.",
-    detail2:
-      "Designed an algorithm for intra-cell channel time scheduling (NP-Hard) with a 25% success rate.",
-  },
-  {
     companyLogo: "https://shorturl.at/c0Z4L",
     companyName: "Hutchison Port Holdings",
     companyWeb: "https://hutchisonports.com/en/",
@@ -62,17 +51,6 @@ const experiences = [
       "Optimized the company’s strategic expansion plans by producing data visualizations and analysis of import/export statistics of potential countries using Tableau.",
     detail2:
       "Contributed to the shipping line monthly market reports by leveraging PowerBI to analyze and compare financial data from multiple shipping line companies.",
-  },
-  {
-    companyLogo: "https://shorturl.at/wNuUF",
-    companyName: "Dept. of Computing, The Hong Kong Polytechnic University",
-    companyWeb: "https://www.polyu.edu.hk/comp/",
-    position: "Student Research Assistant",
-    timeline: "February 2023 - August 2023",
-    detail1:
-      "Installed LoRa communication on Raspberry Pi using MKR WAN 1310, enhancing the system’s wireless communication capabilities.",
-    detail2:
-      "Conducted an experiment on a server-client connection using SSH and X Window to optimize the communication.",
   },
 ];
 const Experience = () => {

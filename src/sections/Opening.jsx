@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Opening = () => {
+  const [email, setEmail] = useState("");
+  const handleInputChange = (event) => {
+    setEmail(event.target.value);
+  };
+  const handleSubmit = async () => {
+    if (!email) {
+      alert("Please enter a valid email address!");
+      return;
+    }
+    try {
+      const response = await fetch("https://personal-website-backend-pxub.onrender.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (response.ok) {
+        alert("Confirmation email sent successfully!");
+        setEmail("");
+      } else {
+        console.error("Failed to send the email. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending email: ", error);
+      alert("An error occurred. Please try again.");
+    }
+  };
   return (
     <div id="opening">
       <div id="opening-outer">
@@ -16,10 +44,12 @@ const Opening = () => {
               type="text"
               placeholder="Email Address"
               name="email"
+              value={email}
+              onChange={handleInputChange}
               required
             />
             <a>
-              <button>Send</button>
+              <button onClick={handleSubmit}>Send</button>
             </a>
           </div>
         </div>
