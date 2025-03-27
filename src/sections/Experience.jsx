@@ -1,19 +1,19 @@
 import React from "react";
 import ExperienceBox from "../components/ExperienceBox";
 const experiences = [
-  // {
-  //   companyLogo: "https://tinyurl.com/bdhxyf7m",
-  //   companyName: "BNP Paribas",
-  //   companyWeb: "https://www.bnpparibas.com.hk/en/",
-  //   position: "Incoming Software Engineer Intern",
-  //   timeline: "September 2024 - Present",
-  // },
+  {
+    companyLogo: "https://tinyurl.com/bdhxyf7m",
+    companyName: "BNP Paribas",
+    companyWeb: "https://www.bnpparibas.com.hk/en/",
+    position: "Software Engineer Intern",
+    timeline: "January 2025 - Present",
+  },
   {
     companyLogo: "https://tinyurl.com/vpdpxzp5",
     companyName: "Deloitte",
     companyWeb: "https://www2.deloitte.com/cn/en.html",
     position: "Technology Consulting Intern",
-    timeline: "September 2024 - Present",
+    timeline: "September 2024 - January 2025",
     detail1:
       "Developed an interactive dashboard for companies to create customized office-based job simulation games using TypeScript, Next.js, and Tailwind.",
     detail2:
