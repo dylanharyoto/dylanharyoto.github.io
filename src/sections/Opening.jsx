@@ -6,10 +6,8 @@ const Opening = () => {
   useEffect(() => {
     const typed = new Typed("#typed-element", {
       strings: [
-        "Hi there👋, I am",
-        "Dominicus <span class='text-[#34fb7b]'>Dylan</span> Haryoto",
-        "a Computer Science student at PolyU",
-        "Welcome to my personal collections. Let's connect!"
+        "Hi there👋, I am Dominicus <span class='text-[#34fb7b]'>Dylan</span> Haryoto,<br/>a Software Engineer Intern at <span class='text-[#34fb7b]'>BNP Paribas</span>!",
+        "Welcome to my personal collections. Let's connect!",
       ],
       typeSpeed: 50,
       backSpeed: 25,
@@ -20,7 +18,6 @@ const Opening = () => {
       typed.destroy();
     };
   }, []);
-
   const handleInputChange = (event) => {
     setEmail(event.target.value);
   };
@@ -30,13 +27,16 @@ const Opening = () => {
       return;
     }
     try {
-      const response = await fetch("https://personal-website-backend-pxub.onrender.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        "https://personal-website-backend-pxub.onrender.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
       if (response.ok) {
         alert("Confirmation email sent successfully!");
         setEmail("");
@@ -48,18 +48,14 @@ const Opening = () => {
       alert("An error occurred. Please try again.");
     }
   };
-
   return (
-    <div id="opening" className="relative h-screen bg-cover animate-bg-animate">
-      <div className="absolute inset-0 bg-black bg-opacity-70">
-        <div className="h-full flex flex-col justify-center items-start px-10 md:px-36">
-          <h4 className="text-white text-2xl md:text-[2.25rem]">Hi there👋, I am</h4>
-          <h1 className="text-white text-[3.86rem] md:text-5xl">
+    <div id="opening" className="w-full relative h-screen bg-cover animate-bg-animate">
+      <div className="w-full absolute inset-0 bg-black bg-opacity-70">
+        <div className="w-full h-full flex flex-col justify-center items-start px-10 md:px-36">
+          <h1 className="text-white text-[3.86rem] md:text-5xl leading-[4.5rem] md:leading-[5rem]">
             <span id="typed-element"></span>
           </h1>
-          <h6 className="text-white text-lg md:text-[1.5rem]">Welcome to my personal collections. Let's connect!</h6>
-          <hr className="w-full my-4" />
-          <div className="flex flex-col md:flex-row gap-2.5 w-full">
+          {/* <div className="flex flex-col md:flex-row gap-2.5 w-full">
             <input
               type="text"
               placeholder="Email Address"
@@ -75,7 +71,7 @@ const Opening = () => {
             >
               Send
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
