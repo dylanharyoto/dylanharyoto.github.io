@@ -2,58 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  /* Keep animations or complex styles not easily replicated in Tailwind */
-  #opening {
-    animation: animate 16s ease-in-out infinite;
-  }
-  @keyframes animate {
-    0% { background-image: url('../public/a1.JPG'); }
-    25% { background-image: url('../public/a3.jpg'); }
-    50% { background-image: url('../public/a4.jpg'); }
-    75% { background-image: url('../public/a5.jpeg'); }
-  }
+/* Custom styles using @apply for complex elements */
+.dotline {
+  @apply w-[35px] h-full p-[70px_20px];
+}
+.dotline > .dot {
+  @apply w-[10px] h-[10px] border-[5px] border-[#34fb7b] rounded-full mx-auto;
+}
+.dotline > .line {
+  @apply w-[10%] h-[132%] bg-[#34fb7b] mx-auto;
 }
 
-@layer base {
-  #projects #s1:checked ~ .boxes #slide4,
-  #projects #s2:checked ~ .boxes #slide5,
-  #projects #s3:checked ~ .boxes #slide1,
-  #projects #s4:checked ~ .boxes #slide2,
-  #projects #s5:checked ~ .boxes #slide3 {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
-    transform: translate3d(-70%, 0, -220px);
-  }
-  #projects #s1:checked ~ .boxes #slide5,
-  #projects #s2:checked ~ .boxes #slide1,
-  #projects #s3:checked ~ .boxes #slide2,
-  #projects #s4:checked ~ .boxes #slide3,
-  #projects #s5:checked ~ .boxes #slide4 {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
-    transform: translate3d(-35%, 0, -120px);
-  }
-  #projects #s1:checked ~ .boxes #slide1,
-  #projects #s2:checked ~ .boxes #slide2,
-  #projects #s3:checked ~ .boxes #slide3,
-  #projects #s4:checked ~ .boxes #slide4,
-  #projects #s5:checked ~ .boxes #slide5 {
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
-    transform: translate3d(0, 0, 0);
-  }
-  #projects #s1:checked ~ .boxes #slide2,
-  #projects #s2:checked ~ .boxes #slide3,
-  #projects #s3:checked ~ .boxes #slide4,
-  #projects #s4:checked ~ .boxes #slide5,
-  #projects #s5:checked ~ .boxes #slide1 {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
-    transform: translate3d(35%, 0, -120px);
-  }
-  #projects #s1:checked ~ .boxes #slide3,
-  #projects #s2:checked ~ .boxes #slide4,
-  #projects #s3:checked ~ .boxes #slide5,
-  #projects #s4:checked ~ .boxes #slide1,
-  #projects #s5:checked ~ .boxes #slide2 {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
-    transform: translate3d(70%, 0, -220px);
-  }
+/* Project slider custom styles (not easily replicable with Tailwind) */
+#projects .boxes > label {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+#projects #s1:checked ~ .boxes #slide4,
+#projects #s2:checked ~ .boxes #slide5,
+#projects #s3:checked ~ .boxes #slide1,
+#projects #s4:checked ~ .boxes #slide2,
+#projects #s5:checked ~ .boxes #slide3 {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
+  transform: translate3d(-70%, 0, -220px);
+}
+#projects #s1:checked ~ .boxes #slide5,
+#projects #s2:checked ~ .boxes #slide1,
+#projects #s3:checked ~ .boxes #slide2,
+#projects #s4:checked ~ .boxes #slide3,
+#projects #s5:checked ~ .boxes #slide4 {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
+  transform: translate3d(-35%, 0, -120px);
+}
+#projects #s1:checked ~ .boxes #slide1,
+#projects #s2:checked ~ .boxes #slide2,
+#projects #s3:checked ~ .boxes #slide3,
+#projects #s4:checked ~ .boxes #slide4,
+#projects #s5:checked ~ .boxes #slide5 {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
+  transform: translate3d(0, 0, 0);
+}
+#projects #s1:checked ~ .boxes #slide2,
+#projects #s2:checked ~ .boxes #slide3,
+#projects #s3:checked ~ .boxes #slide4,
+#projects #s4:checked ~ .boxes #slide5,
+#projects #s5:checked ~ .boxes #slide1 {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
+  transform: translate3d(35%, 0, -120px);
+}
+#projects #s1:checked ~ .boxes #slide3,
+#projects #s2:checked ~ .boxes #slide4,
+#projects #s3:checked ~ .boxes #slide5,
+#projects #s4:checked ~ .boxes #slide1,
+#projects #s5:checked ~ .boxes #slide2 {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
+  transform: translate3d(70%, 0, -220px);
 }

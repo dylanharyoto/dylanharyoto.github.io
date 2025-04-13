@@ -6,15 +6,11 @@ const Activities = () => {
   return (
     <div
       id="activities"
-      className="relative top-[-45vh] h-auto bg-gradient-to-b from-transparent via-[rgba(12,28,36,1)] to-transparent px-[5vh] md:px-[140px] xl:px-[40vh] py-[100px] pb-[170px] flex flex-col gap-[70px]"
+      className="relative top-[-40vh] bg-gradient-to-b from-transparent via-[rgba(12,28,36,1)] to-transparent px-10 md:px-36 py-24 pb-40 flex flex-col gap-16"
     >
       <div className="heading text-center leading-[60px]">
-        <h4 className="text-[1.75rem] md:text-[2.25rem] p-0 m-0 font-thin">
-          Leading by Example
-        </h4>
-        <p className="leading-[170%] text-base md:text-xl m-0 p-0">
-          Making a Difference through Guiding Others
-        </p>
+        <h4 className="text-2xl md:text-[2.25rem]">Leading by Example</h4>
+        <p className="text-lg md:text-[1.25rem]">Making a Difference through Guiding Others</p>
       </div>
       <ActivityBoxLeft
         imageName="l1.jpg"

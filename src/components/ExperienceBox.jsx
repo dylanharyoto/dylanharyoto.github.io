@@ -10,29 +10,20 @@ const ExperienceBox = ({
   detail2,
 }) => {
   return (
-    <div className="box grid grid-cols-[15%_5%_80%]">
+    <div className="grid grid-cols-[15%_5%_80%] md:grid-cols-[15%_5%_80%] gap-5">
       <div className="image-box relative">
-        <div className="image-border absolute -top-[5px] -left-[5px] h-[150px] w-[150px] border-[3px] border-custom-green rounded-[20px]"></div>
-        <img
-          src={companyLogo}
-          className="h-[150px] w-[150px] border-[3px] border-custom-green rounded-[20px] relative z-[2]"
-        />
+        <div className="absolute -top-1.5 -left-1.5 h-[150px] w-[150px] border-[3px] border-[#34fb7b] rounded-xl"></div>
+        <img src={companyLogo} className="h-[150px] w-[150px] border-[3px] border-[#34fb7b] rounded-xl z-2 relative" />
       </div>
-      <div className="dotline w-[35px] h-full p-[70px_20px] hidden md:block">
-        <div className="dot w-[10px] h-[10px] border-[5px] border-custom-green rounded-full mx-auto"></div>
-        <div className="line w-[10%] h-[132%] bg-custom-green mx-auto"></div>
+      <div className="dotline hidden md:block">
+        <div className="dot"></div>
+        <div className="line"></div>
       </div>
-      <div className="details ml-5 flex flex-col justify-center">
-        <p>
-          <span className="text-custom-green">{timeline}</span>
-        </p>
-        <h5 className="text-[1.75rem] p-0 m-0 font-thin">{position}</h5>
-        <a
-          href={companyWeb}
-          target="_blank"
-          className="text-white no-underline w-auto rounded-[20px] transition duration-500 hover:underline hover:cursor-pointer hover:text-custom-green"
-        >
-          <p>
+      <div className="details flex flex-col justify-center ml-0 md:ml-5">
+        <p className="text-base md:text-[1.25rem]"><span className="text-[#34fb7b]">{timeline}</span></p>
+        <h5 className="text-[1.35rem] md:text-[1.75rem]">{position}</h5>
+        <a href={companyWeb} target="_blank" className="hover:underline hover:text-[#34fb7b]">
+          <p className="text-base md:text-[1.25rem]">
             <i>
               {companyName}{" "}
               <svg
@@ -55,14 +46,10 @@ const ExperienceBox = ({
             </i>
           </p>
         </a>
-        <br />
-        <ul className="list-none pl-4 m-0">
-          <li>
-            <p className="leading-[170%] text-xl m-0 p-0">{detail1}</p>
-          </li>
-          <li>
-            <p className="leading-[170%] text-xl m-0 p-0">{detail2}</p>
-          </li>
+        {(detail1 || detail2) && <br />}
+        <ul className="list-none pl-4 md:pl-5">
+          {detail1 && <li className="before:content-['⇨'] before:pr-2"><p className="text-base md:text-[1.25rem]">{detail1}</p></li>}
+          {detail2 && <li className="before:content-['⇨'] before:pr-2"><p className="text-base md:text-[1.25rem]">{detail2}</p></li>}
         </ul>
       </div>
     </div>

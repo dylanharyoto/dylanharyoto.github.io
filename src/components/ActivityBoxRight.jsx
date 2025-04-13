@@ -11,22 +11,13 @@ const ActivityBoxRight = ({
   location,
 }) => {
   return (
-    <div className="img-right flex flex-col md:flex-row-reverse items-center">
-      <img
-        src={imageName}
-        className="rounded-[20px] shadow-[0_0_10px_rgba(255,255,255,0.5)] w-[300px] h-[225px] md:w-[580px] md:h-[435px]"
-      />
-      <div className="infos-left w-full md:w-1/2 flex flex-col gap-2.5 text-center md:text-justify mt-2.5 md:mt-0">
+    <div className="flex flex-col md:flex-row-reverse items-center">
+      <img src={imageName} className="w-[300px] md:w-[580px] h-[225px] md:h-[435px] rounded-xl shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+      <div className="infos-left w-full md:w-1/2 flex flex-col gap-2.5 text-center md:text-left mt-2.5 md:mt-0">
         <div>
-          <h4 className="text-[1.75rem] md:text-[2.25rem] p-0 m-0 font-thin">
-            {position}
-          </h4>
-          <a
-            href={activityWeb}
-            target="_blank"
-            className="text-white no-underline w-auto rounded-[20px] transition duration-500 hover:underline hover:cursor-pointer hover:text-custom-green"
-          >
-            <p className="leading-[170%] text-base md:text-xl m-0 p-0">
+          <h4 className="text-2xl md:text-[2.25rem]">{position}</h4>
+          <a href={activityWeb} target="_blank" className="hover:underline hover:text-[#34fb7b]">
+            <p className="text-base md:text-[1.25rem]">
               <i>
                 {activityName}{" "}
                 <svg
@@ -50,25 +41,15 @@ const ActivityBoxRight = ({
             </p>
           </a>
         </div>
-        <div className="details-left relative bg-[#040c14] text-white w-[90%] md:w-full p-5 rounded-[20px] text-justify shadow-[0_0_10px_rgba(255,255,255,0.5)]">
-          <ul className="list-none pl-4 m-0">
-            <li>
-              <p className="leading-[170%] text-base md:text-xl m-0 p-0">
-                {detail1}
-              </p>
-            </li>
-            <li>
-              <p className="leading-[170%] text-base md:text-xl m-0 p-0">
-                {detail2}
-              </p>
-            </li>
+        <div className="details-left bg-[#040c14] text-white w-full md:w-[90%] p-5 rounded-xl text-justify shadow-[0_0_10px_rgba(255,255,255,0.5)] relative">
+          <ul className="list-none pl-4 md:pl-5">
+            <li className="before:content-['⇨'] before:pr-2"><p className="text-base md:text-[1.25rem]">{detail1}</p></li>
+            <li className="before:content-['⇨'] before:pr-2"><p className="text-base md:text-[1.25rem]">{detail2}</p></li>
           </ul>
         </div>
         <div>
-          <p className="leading-[170%] text-base md:text-xl m-0 p-0">
-            <span className="text-custom-green">
-              {timeline} | {location}
-            </span>
+          <p className="text-base md:text-[1.25rem]">
+            <span className="text-[#34fb7b]">{timeline} | {location}</span>
           </p>
         </div>
       </div>

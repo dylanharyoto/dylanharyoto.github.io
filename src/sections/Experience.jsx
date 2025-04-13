@@ -2,22 +2,69 @@ import React from "react";
 import ExperienceBox from "../components/ExperienceBox";
 
 const experiences = [
-  // ... (data remains unchanged)
+  // [Data remains unchanged as per your request]
+  {
+    companyLogo: "https://tinyurl.com/bdhxyf7m",
+    companyName: "BNP Paribas",
+    companyWeb: "https://www.bnpparibas.com.hk/en/",
+    position: "Software Engineer Intern",
+    timeline: "January 2025 - Present",
+  },
+  {
+    companyLogo: "https://tinyurl.com/vpdpxzp5",
+    companyName: "Deloitte",
+    companyWeb: "https://www2.deloitte.com/cn/en.html",
+    position: "Technology Consulting Intern",
+    timeline: "September 2024 - January 2025",
+    detail1:
+      "Developed an interactive dashboard for companies to create customized office-based job simulation games using TypeScript, Next.js, and Tailwind.",
+    detail2:
+      "Ensured transactional atomicity in database operations using Mongoose, developed RESTful API endpoints with Express.js, and integrated AWS S3 for images.",
+  },
+  {
+    companyLogo: "https://shorturl.at/Mkwil",
+    companyName: "Career Hackers",
+    companyWeb: "https://www.careerhackers.io/pro/",
+    position: "Software Engineer Intern",
+    timeline: "August 2024 - August 2024",
+    detail1:
+      "Developed an interactive dashboard for companies to create customized office-based job simulation games using TypeScript, Next.js, and Tailwind.",
+    detail2:
+      "Ensured transactional atomicity in database operations using Mongoose, developed RESTful API endpoints with Express.js, and integrated AWS S3 for images.",
+  },
+  {
+    companyLogo: "https://shorturl.at/Voh68",
+    companyName: "Castco Testing Centre Limited",
+    companyWeb: "https://www.castco.com.hk/eng/home",
+    position: "Software Engineer Intern",
+    timeline: "June 2024 - June 2024",
+    detail1:
+      "Developed the back-end of the vehicle tracking system using Traccar on Linux, connecting to Microsoft SQL Server to store real-time vehicle tracking data.",
+    detail2:
+      "Enhanced filtering on three product registration apps by fixing backend SQL errors and adding front-end fields with undo functionality using Xamarin and C#.",
+  },
+  {
+    companyLogo: "https://shorturl.at/c0Z4L",
+    companyName: "Hutchison Port Holdings",
+    companyWeb: "https://hutchisonports.com/en/",
+    position: "Market Research Assistant",
+    timeline: "June 2023 - August 2023",
+    detail1:
+      "Optimized the company’s strategic expansion plans by producing data visualizations and analysis of import/export statistics of potential countries using Tableau.",
+    detail2:
+      "Contributed to the shipping line monthly market reports by leveraging PowerBI to analyze and compare financial data from multiple shipping line companies.",
+  },
 ];
 
 const Experience = () => {
   return (
     <div
       id="experiences"
-      className="px-[5vh] md:px-[140px] xl:px-[40vh] py-[100px] pb-[170px] relative h-auto bg-gradient-to-b from-transparent via-[rgba(12,28,36,1)] to-transparent top-[-20vh] flex flex-col gap-[70px] md:gap-[100px]"
+      className="px-10 md:px-36 py-24 pb-40 relative top-[-20vh] bg-gradient-to-b from-transparent via-[rgba(12,28,36,1)] to-transparent flex flex-col gap-24"
     >
       <div className="heading text-center leading-[60px]">
-        <h4 className="text-[1.75rem] md:text-[2.25rem] p-0 m-0 font-thin">
-          Journey of Success
-        </h4>
-        <p className="leading-[170%] text-base md:text-xl m-0 p-0">
-          Moments from My Career Path
-        </p>
+        <h4 className="text-2xl md:text-[2.25rem]">Journey of Success</h4>
+        <p className="text-lg md:text-[1.25rem]">Moments from My Career Path</p>
       </div>
       {experiences.map((experience, id) => (
         <ExperienceBox

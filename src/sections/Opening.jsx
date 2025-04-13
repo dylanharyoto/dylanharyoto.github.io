@@ -1,7 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Typed from "typed.js";
 
 const Opening = () => {
   const [email, setEmail] = useState("");
+  useEffect(() => {
+    const typed = new Typed("#typed-element", {
+      strings: [
+        "Hi there👋, I am",
+        "Dominicus <span class='text-[#34fb7b]'>Dylan</span> Haryoto",
+        "a Computer Science student at PolyU",
+        "Welcome to my personal collections. Let's connect!"
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+      smartBackspace: true,
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const handleInputChange = (event) => {
     setEmail(event.target.value);
   };
@@ -29,27 +48,18 @@ const Opening = () => {
       alert("An error occurred. Please try again.");
     }
   };
+
   return (
-    <div
-      id="opening"
-      className="relative px-[5vh] md:px-[140px] h-screen bg-cover"
-    >
-      <div id="opening-outer" className="absolute inset-0 w-full h-screen bg-black/70">
-        <div
-          id="opening-inner"
-          className="h-screen px-[5vh] md:px-[140px] flex flex-col justify-center items-start"
-        >
-          <h4 className="text-[1.75rem] md:text-[2.25rem] p-0 m-0 font-thin">
-            Hi there👋, I am
-          </h4>
-          <h1 className="text-[3.86rem] md:text-[5rem] p-0 m-0 font-thin">
-            Dominicus <span className="text-custom-green">Dylan</span> Haryoto
+    <div id="opening" className="relative h-screen bg-cover animate-bg-animate">
+      <div className="absolute inset-0 bg-black bg-opacity-70">
+        <div className="h-full flex flex-col justify-center items-start px-10 md:px-36">
+          <h4 className="text-white text-2xl md:text-[2.25rem]">Hi there👋, I am</h4>
+          <h1 className="text-white text-[3.86rem] md:text-5xl">
+            <span id="typed-element"></span>
           </h1>
-          <h6 className="text-[1.16rem] md:text-[1.5rem] p-0 m-0 font-thin">
-            Welcome to my personal collections. Let's connect!
-          </h6>
-          <hr className="w-full" />
-          <div className="w-full flex justify-center gap-2.5 mt-2.5">
+          <h6 className="text-white text-lg md:text-[1.5rem]">Welcome to my personal collections. Let's connect!</h6>
+          <hr className="w-full my-4" />
+          <div className="flex flex-col md:flex-row gap-2.5 w-full">
             <input
               type="text"
               placeholder="Email Address"
@@ -57,16 +67,14 @@ const Opening = () => {
               value={email}
               onChange={handleInputChange}
               required
-              className="w-full md:w-[40%] p-2.5 text-base border-[3px] border-white rounded-[40px] bg-transparent text-white placeholder:text-white/70"
+              className="w-full md:w-2/5 p-2.5 text-white bg-transparent border-[3px] border-white rounded-full placeholder:text-white placeholder:opacity-70"
             />
-            <a className="text-white no-underline w-auto rounded-[20px] transition duration-500 hover:underline hover:cursor-pointer hover:text-custom-green">
-              <button
-                onClick={handleSubmit}
-                className="cursor-pointer border-0 text-base font-semibold rounded-full px-5 py-2.5 m-1 bg-custom-green text-black transition duration-500"
-              >
-                Send
-              </button>
-            </a>
+            <button
+              onClick={handleSubmit}
+              className="bg-[#34fb7b] text-black font-semibold py-2.5 px-5 rounded-full transition duration-500 ease-in-out hover:bg-[#2de069]"
+            >
+              Send
+            </button>
           </div>
         </div>
       </div>
