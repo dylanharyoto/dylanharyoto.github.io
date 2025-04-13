@@ -1,42 +1,27 @@
-/* src/index.css */
-
-/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS for animations that Tailwind can't handle */
-@layer utilities {
-  /* Opening Section Background Animation */
+@layer base {
+  /* Keep animations or complex styles not easily replicated in Tailwind */
   #opening {
     animation: animate 16s ease-in-out infinite;
   }
   @keyframes animate {
-    0% {
-      background-image: url(../public/a1.JPG);
-    }
-    25% {
-      background-image: url(../public/a3.jpg);
-    }
-    50% {
-      background-image: url(../public/a4.jpg);
-    }
-    75% {
-      background-image: url(../public/a5.jpeg);
-    }
+    0% { background-image: url('../public/a1.JPG'); }
+    25% { background-image: url('../public/a3.jpg'); }
+    50% { background-image: url('../public/a4.jpg'); }
+    75% { background-image: url('../public/a5.jpeg'); }
   }
+}
 
-  /* Projects Section 3D Carousel */
-  #projects > .inner > .boxes {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
+@layer base {
   #projects #s1:checked ~ .boxes #slide4,
   #projects #s2:checked ~ .boxes #slide5,
   #projects #s3:checked ~ .boxes #slide1,
   #projects #s4:checked ~ .boxes #slide2,
   #projects #s5:checked ~ .boxes #slide3 {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
     transform: translate3d(-70%, 0, -220px);
   }
   #projects #s1:checked ~ .boxes #slide5,
@@ -44,7 +29,7 @@
   #projects #s3:checked ~ .boxes #slide2,
   #projects #s4:checked ~ .boxes #slide3,
   #projects #s5:checked ~ .boxes #slide4 {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);
   }
   #projects #s1:checked ~ .boxes #slide1,
@@ -52,7 +37,7 @@
   #projects #s3:checked ~ .boxes #slide3,
   #projects #s4:checked ~ .boxes #slide4,
   #projects #s5:checked ~ .boxes #slide5 {
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
     transform: translate3d(0, 0, 0);
   }
   #projects #s1:checked ~ .boxes #slide2,
@@ -60,7 +45,7 @@
   #projects #s3:checked ~ .boxes #slide4,
   #projects #s4:checked ~ .boxes #slide5,
   #projects #s5:checked ~ .boxes #slide1 {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
     transform: translate3d(35%, 0, -120px);
   }
   #projects #s1:checked ~ .boxes #slide3,
@@ -68,7 +53,7 @@
   #projects #s3:checked ~ .boxes #slide5,
   #projects #s4:checked ~ .boxes #slide1,
   #projects #s5:checked ~ .boxes #slide2 {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
     transform: translate3d(70%, 0, -220px);
   }
 }

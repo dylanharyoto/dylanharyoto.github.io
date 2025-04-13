@@ -10,9 +10,9 @@ function App() {
   return (
     <div
       id="body"
-      className="flex flex-wrap justify-center m-0 p-0 box-border text-white font-rubik text-base"
+      className="flex justify-center flex-wrap m-0 p-0 box-border text-white font-rubik text-base"
     >
-      <header>
+      <header className="w-3/4 fixed mt-2.5 z-[3]">
         <NavBar />
       </header>
       <main>
