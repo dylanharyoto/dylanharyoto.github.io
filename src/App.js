@@ -8,7 +8,10 @@ import Projects from "./sections/Projects";
 
 function App() {
   return (
-    <div id="body">
+    <div
+      id="body"
+      className="flex flex-wrap justify-center m-0 p-0 box-border text-white font-rubik text-base"
+    >
       <header>
         <NavBar />
       </header>
