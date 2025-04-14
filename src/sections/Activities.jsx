@@ -1,77 +1,99 @@
-import React from "react";
-import ActivityBoxLeft from "../components/ActivityBoxLeft";
-import ActivityBoxRight from "../components/ActivityBoxRight";
+import React, { useState } from "react";
+import ActivityBox from "../components/ActivityBox";
+
+const activities = [
+  {
+    imageName: "/l1.jpg",
+    position: "Student Ambassador",
+    activityName: "HSBC/HKU Business Case Competition",
+    activityWeb: "https://competition.acrc.hku.hk/",
+    detail1: "Selected as one of the 30+ student ambassadors in charge of guiding case preparation and presentation.",
+    detail2: "Successfully guided my team from the preparation round to reach the final round of the competition.",
+    timeline: "May 2024",
+    location: "Hong Kong SAR",
+  },
+  {
+    imageName: "/l2.jpg",
+    position: "Vice President",
+    activityName: "Google Developer Student Clubs PolyU",
+    activityWeb: "https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/",
+    detail1: "Selected from 100+ candidates to lead a team of technical leads in organizing tech-related workshops.",
+    detail2: "Organized 5+ tech workshops accessible to 20,000+ undergraduates, masters, PhDs, and faculty members.",
+    timeline: "Aug 2023 - Present",
+    location: "Hong Kong SAR",
+  },
+  {
+    imageName: "/l3.jpg",
+    position: "Service Project Lead",
+    activityName: "African Evangelistic Enterprise",
+    activityWeb: "https://aeint.org/",
+    detail1: "Led a team to install solar-powered electricity to 400+ rural households, providing light during dark hours.",
+    detail2: "Collaborated with technical team to implement an IoT system with MPPT and intranet for remote monitoring.",
+    timeline: "Mar 2023 - Aug 2023",
+    location: "Rwanda, Africa",
+  },
+  {
+    imageName: "/l4.jpg",
+    position: "Technology Innovation Lead",
+    activityName: "PolyU E-Formula Racing Team",
+    activityWeb: "https://hkpolyuracing.com/",
+    detail1: "Developed RC car learning curriculum catered specifically for secondary school students.",
+    detail2: "Built the RC car using Arduino and provided online video lectures and tutorials about basic soldering.",
+    timeline: "Nov 2022 - Jun 2023",
+    location: "Hong Kong SAR",
+  },
+  {
+    imageName: "/l5.jpg",
+    position: "Technical Lead",
+    activityName: "Google Developer Student Clubs PolyU",
+    activityWeb: "https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/",
+    detail1: "Hosted beginner workshop on robotics and programming using Lego Mindstorms EV3 for 20+ non-tech students.",
+    detail2: "Collaborated with executive committees from other divisions to plan and prepare for upcoming events.",
+    timeline: "Oct 2022 - Jul 2023",
+    location: "Hong Kong SAR",
+  },
+  {
+    imageName: "/l6.jpg",
+    position: "Country Representative",
+    activityName: "World Robot Olympiad",
+    activityWeb: "https://wro-association.org/",
+    detail1: "Led the team through planning, task delegation, and execution strategies, achieved top 18 in final round.",
+    detail2: "Responsible for robot design and logic programming, successfully scored full points for the mission.",
+    timeline: "Jun 2019 - Nov 2020",
+    location: "Gyor, Hungary",
+  },
+];
 
 const Activities = () => {
+  const [expanded, setExpanded] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpanded(expanded === index ? null : index);
+  };
+
   return (
     <div
       id="activities"
-      className="relative top-[-40vh] bg-gradient-to-b from-transparent via-[rgba(12,28,36,1)] to-transparent px-10 md:px-36 py-24 pb-40 flex flex-col gap-16"
+      className="bg-[#0c1c24] min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-white"
     >
-      <div className="heading text-center leading-[60px]">
-        <h4 className="text-2xl md:text-[2.25rem]">Leading by Example</h4>
-        <p className="text-lg md:text-[1.25rem]">Making a Difference through Guiding Others</p>
+      <div className="text-center mb-8 sm:mb-12">
+        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+          Leading by Example
+        </h4>
+        <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-2">
+          Making a Difference through Guiding Others
+        </p>
       </div>
-      <ActivityBoxLeft
-        imageName="l1.jpg"
-        position="Student Ambassador"
-        activityName="HSBC/HKU Business Case Competition"
-        activityWeb="https://competition.acrc.hku.hk/"
-        detail1="Selected as one of the 30+ student ambassadors in charge of guiding case preparation and presentation."
-        detail2="Successfully guided my team from the preparation round to reach the final round of the competition."
-        timeline="May 2024"
-        location="Hong Kong SAR"
-      />
-      <ActivityBoxRight
-        imageName="l2.jpg"
-        position="Vice President"
-        activityName="Google Developer Student Clubs PolyU"
-        activityWeb="https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/"
-        detail1="Selected from 100+ candidates to lead a team of technical leads in organizing tech-related workshops."
-        detail2="Organized 5+ tech workshops accessible to 20,000+ undergraduates, masters, PhDs, and faculty members."
-        timeline="Aug 2023 - Present"
-        location="Hong Kong SAR"
-      />
-      <ActivityBoxLeft
-        imageName="l3.jpg"
-        position="Service Project Lead"
-        activityName="African Evangelistic Enterprise"
-        activityWeb="https://aeint.org/"
-        detail1="Led a team to install solar-powered electricity to 400+ rural households, providing light during dark hours."
-        detail2="Collaborated with technical team to implement an IoT system with MPPT and intranet for remote monitoring."
-        timeline="Mar 2023 - Aug 2023"
-        location="Rwanda, Africa"
-      />
-      <ActivityBoxRight
-        imageName="l4.jpg"
-        position="Technology Innovation Lead"
-        activityName="PolyU E-Formula Racing Team"
-        activityWeb="https://hkpolyuracing.com/"
-        detail1="Developed RC car learning curriculum catered specifically for secondary school students."
-        detail2="Built the RC car using Arduino and provided online video lectures and tutorials about basic soldering."
-        timeline="Nov 2022 - Jun 2023"
-        location="Hong Kong SAR"
-      />
-      <ActivityBoxLeft
-        imageName="l5.jpg"
-        position="Technical Lead"
-        activityName="Google Developer Student Clubs PolyU"
-        activityWeb="https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/"
-        detail1="Hosted beginner workshop on robotics and programming using Lego Mindstorms EV3 for 20+ non-tech students."
-        detail2="Collaborated with executive committees from other divisions to plan and prepare for upcoming events."
-        timeline="Oct 2022 - Jul 2023"
-        location="Hong Kong SAR"
-      />
-      <ActivityBoxRight
-        imageName="l6.jpg"
-        position="Country Representative"
-        activityName="World Robot Olympiad"
-        activityWeb="https://wro-association.org/"
-        detail1="Led the team through planning, task delegation, and execution strategies, achieved top 18 in final round."
-        detail2="Responsible for robot design and logic programming, successfully scored full points for the mission."
-        timeline="Jun 2019 - Nov 2020"
-        location="Gyor, Hungary"
-      />
+      <div className="space-y-4 max-w-3xl mx-auto">
+        {activities.map((activity, index) => (
+          <ActivityBox
+            key={index}
+            {...activity}
+            isExpanded={expanded === index}
+            toggleExpand={() => toggleExpand(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,71 +1,104 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Typed from "typed.js";
 
 const About = () => {
+  useEffect(() => {
+    const typed = new Typed("#typed-element", {
+      strings: [
+        "Hi there👋, I am Dominicus <span class='text-[#34fb7b]'>Dylan</span> Haryoto",
+        "A Software Engineer Intern at <span class='text-[#34fb7b]'>BNP Paribas</span>",
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+      smartBackspace: true,
+      html: true,
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div
       id="about"
-      className="bg-gradient-to-b from-transparent via-[rgba(4,12,20,1)] to-transparent h-screen px-10 md:px-36 py-24 relative top-[-10vh] grid grid-cols-1 md:grid-cols-2 grid-rows-[10%_60%_10%_20%] gap-x-12 md:gap-x-50"
+      className="bg-[#0c1c24] h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36"
     >
-      <div className="heading col-span-2 text-center leading-[60px]">
-        <h4 className="text-2xl md:text-[2.25rem]">Unveiling the Real Me</h4>
-        <p className="text-lg md:text-[1.25rem]">Revealing the Person Behind the Story</p>
-      </div>
-      <div className="details flex flex-col gap-5 w-full">
-        <h6 className="text-lg md:text-[1.5rem]">
-          I am a penultimate-year <span className="text-[#34fb7b]">Computer Science</span> student with a
-          minor in <span className="text-[#34fb7b]">Finance</span> at{" "}
-          <a
-            href="https://www.topuniversities.com/universities/hong-kong-polytechnic-university"
-            target="_blank"
-            className="hover:underline hover:text-[#34fb7b]"
-          >
-            <span className="text-[#34fb7b]">PolyU</span>
-          </a>
-          .
-        </h6>
-        <p className="text-base md:text-[1.25rem] leading-[170%]">
-          I work for 12 hours, followed by a 1-hour lunch, a 1-hour dinner, a
-          2-hour break, and 8 hours of sleep every day.
-        </p>
-        <h6 className="text-lg md:text-[1.5rem]">
-          I am <span className="text-[#34fb7b]">ambitious</span> and{" "}
-          <span className="text-[#34fb7b]">hardworking</span> to achieve my
-          goals with an <span className="text-[#34fb7b]">optimistic</span> mindset.
-        </h6>
-        <p className="text-base md:text-[1.25rem] leading-[170%]">
-          Watch the video, find my coding skills below, and feel free to grab my
-          resume{" "}
-          <a href="./Resume.pdf" download className="hover:underline hover:text-[#34fb7b]">
-            <span className="text-[#34fb7b]">here</span>
-          </a>
-          !
-        </p>
-      </div>
-      <div className="wrapper relative pb-[56.25%] w-full">
-        <iframe
-          src="https://www.youtube.com/embed/5YIev0D1_ck"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          className="absolute w-[98.5%] h-[97%] border-[3px] border-[#34fb7b] rounded-xl"
-        ></iframe>
-      </div>
-      <div className="skills flex flex-wrap justify-center items-center py-2.5 z-1 col-span-2 gap-y-4">
-        <img src="s1.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s2.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s3.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s4.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s5.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s6.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s7.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s8.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s9.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s10.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s11.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s12.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s13.png" className="h-6 md:h-10 mx-2 md:mx-5" />
-        <img src="s14.png" className="h-6 md:h-10 mx-2 md:mx-5" />
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto_auto] md:grid-rows-[auto_auto_auto] gap-y-4 sm:gap-y-6 md:gap-y-8 lg:gap-x-12 xl:gap-x-16 h-full">
+        <div className="col-span-2 text-center row-start-1">
+          <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+            Unveiling the Real Me
+          </h4>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-2">
+            Revealing the Person Behind the Story
+          </p>
+        </div>
+        <div className="flex justify-center md:justify-end order-first md:order-none row-start-2 md:col-start-2 md:row-start-2 my-4 md:my-0">
+          <img
+            src="/osa.jpg"
+            alt="Profile"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain border-3 border-[#34fb7b] rounded-xl"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-center md:items-start row-start-3 md:col-start-1 md:row-start-2 text-center md:text-left gap-y-4">
+          <h1 className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl text-white leading-tight sm:leading-snug">
+            <span id="typed-element"></span>
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-prose">
+            Since my first year, I have let my passion for business and
+            technology lead me. I have served as the Vice President of the
+            Google Developer Student Club, undergone an exchange study at
+            Nanyang Technological University, participated in hackathons, and
+            worked as an intern with medium-sized and large, international
+            enterprises.
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center items-center col-span-2 row-start-4 md:row-start-3 gap-2 sm:gap-4 md:gap-6">
+          <img
+            src="s1.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s2.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s3.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s4.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s8.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s9.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s10.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s11.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s12.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s13.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+          <img
+            src="s14.png"
+            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+          />
+        </div>
       </div>
     </div>
   );

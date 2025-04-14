@@ -1,83 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import ExperienceBox from "../components/ExperienceBox";
 
 const experiences = [
-  // [Data remains unchanged as per your request]
   {
-    companyLogo: "https://tinyurl.com/bdhxyf7m",
+    companyLogo: "/logo_1.jpeg",
     companyName: "BNP Paribas",
     companyWeb: "https://www.bnpparibas.com.hk/en/",
     position: "Software Engineer Intern",
-    timeline: "January 2025 - Present",
+    timeline: "Jan 2025 - Present",
+    detail1: "Building a distributed caching system (Hazelcast) in KDB+ integrated with a Pub/Sub architecture for more efficient storage and faster retrieval of trade executions.",
+    detail2: "Developed an object-oriented order book with limit and market order functionalities in Java, supporting FIX protocol, and integrated the VWAP algo to automate execution."
   },
   {
-    companyLogo: "https://tinyurl.com/vpdpxzp5",
+    companyLogo: "/logo_2.jpeg",
     companyName: "Deloitte",
     companyWeb: "https://www2.deloitte.com/cn/en.html",
-    position: "Technology Consulting Intern",
-    timeline: "September 2024 - January 2025",
-    detail1:
-      "Developed an interactive dashboard for companies to create customized office-based job simulation games using TypeScript, Next.js, and Tailwind.",
-    detail2:
-      "Ensured transactional atomicity in database operations using Mongoose, developed RESTful API endpoints with Express.js, and integrated AWS S3 for images.",
+    position: "Tech Consultant Intern",
+    timeline: "Sep 2024 - Jan 2025",
+    detail1: "Assisted in developing data quality and governance frameworks for clients to ensure data management practices align with industry standards and regulatory requirements.",
+    detail2: "Conducted in-depth research on data mesh, exploring its principles and applications to identify innovative data architecture solutions that promote decentralized data ownership"
   },
   {
-    companyLogo: "https://shorturl.at/Mkwil",
+    companyLogo: "/logo_3.jpeg",
     companyName: "Career Hackers",
     companyWeb: "https://www.careerhackers.io/pro/",
     position: "Software Engineer Intern",
-    timeline: "August 2024 - August 2024",
-    detail1:
-      "Developed an interactive dashboard for companies to create customized office-based job simulation games using TypeScript, Next.js, and Tailwind.",
-    detail2:
-      "Ensured transactional atomicity in database operations using Mongoose, developed RESTful API endpoints with Express.js, and integrated AWS S3 for images.",
+    timeline: "Aug 2024 - Aug 2024",
+    detail1: "Enabled flexibility by developing an interactive dashboard for companies to create customized office-based job simulation games using TypeScript, Next.js, and Tailwind.",
+    detail2: "Ensured transactional atomicity in database operations using Mongoose while developing RESTful API endpoints with Express.js, and integrated AWS S3 for images and PDF."
   },
   {
-    companyLogo: "https://shorturl.at/Voh68",
+    companyLogo: "/logo_4.jpeg",
     companyName: "Castco Testing Centre Limited",
     companyWeb: "https://www.castco.com.hk/eng/home",
     position: "Software Engineer Intern",
-    timeline: "June 2024 - June 2024",
-    detail1:
-      "Developed the back-end of the vehicle tracking system using Traccar on Linux, connecting to Microsoft SQL Server to store real-time vehicle tracking data.",
-    detail2:
-      "Enhanced filtering on three product registration apps by fixing backend SQL errors and adding front-end fields with undo functionality using Xamarin and C#.",
+    timeline: "Jun 2024 - Jun 2024",
+    detail1: "Created the back-end of the company’s vehicle tracking system using Traccar on Linux, established a connection to Microsoft SQL Server, and retrieved real-time data using API.",
+    detail2: "Enhanced filtering in 3 product registration apps by resolving SQL errors and adding filtering fields with undo functionality using Xamarin and C#."
   },
   {
-    companyLogo: "https://shorturl.at/c0Z4L",
+    companyLogo: "/logo_5.jpeg",
     companyName: "Hutchison Port Holdings",
     companyWeb: "https://hutchisonports.com/en/",
     position: "Market Research Assistant",
-    timeline: "June 2023 - August 2023",
-    detail1:
-      "Optimized the company’s strategic expansion plans by producing data visualizations and analysis of import/export statistics of potential countries using Tableau.",
-    detail2:
-      "Contributed to the shipping line monthly market reports by leveraging PowerBI to analyze and compare financial data from multiple shipping line companies.",
+    timeline: "Jun 2023 - Aug 2023",
+    detail1: "Optimized the company’s strategic expansion plans by producing data visualizations and comprehensive analysis of import/export statistics of potential countries using Tableau.",
+    detail2: "Contributed to the shipping line section of the monthly market reports by leveraging PowerBI to analyze and compare financial data from multiple shipping line companies."
   },
 ];
 
 const Experience = () => {
+  const [expanded, setExpanded] = useState(null);
+
+  const toggleExpand = (index) => {
+    setExpanded(expanded === index ? null : index);
+  };
+
   return (
     <div
       id="experiences"
-      className="px-10 md:px-36 py-24 pb-40 relative top-[-20vh] bg-gradient-to-b from-transparent via-[rgba(12,28,36,1)] to-transparent flex flex-col gap-24"
+      className="bg-[#0c1c24] min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-white"
     >
-      <div className="heading text-center leading-[60px]">
-        <h4 className="text-2xl md:text-[2.25rem]">Journey of Success</h4>
-        <p className="text-lg md:text-[1.25rem]">Moments from My Career Path</p>
+      <div className="text-center mb-8 sm:mb-12">
+        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+          Journey of Success
+        </h4>
+        <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-2">
+          Moments from My Career Path
+        </p>
       </div>
-      {experiences.map((experience, id) => (
-        <ExperienceBox
-          key={id}
-          companyLogo={experience.companyLogo}
-          companyName={experience.companyName}
-          companyWeb={experience.companyWeb}
-          position={experience.position}
-          timeline={experience.timeline}
-          detail1={experience.detail1}
-          detail2={experience.detail2}
-        />
-      ))}
+      <div className="space-y-4 max-w-3xl mx-auto">
+        {experiences.map((experience, index) => (
+          <ExperienceBox
+            key={index}
+            {...experience}
+            isExpanded={expanded === index}
+            toggleExpand={() => toggleExpand(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
