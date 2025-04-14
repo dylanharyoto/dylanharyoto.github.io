@@ -24,7 +24,7 @@ const awards = [
   },
   {
     image: "/a1.jpg",
-    title: "Bronze Medalist & Best Innovation Award",
+    title: "Bronze Medalist & Best Innovation",
     organization: "World Robot Olympiad",
     date: "November 15, 2020",
     description: "Celebrated for creative robotics design and execution.",
@@ -46,88 +46,102 @@ const awards = [
 ];
 
 const Awards = () => {
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(new Array(awards.length).fill(false));
 
-  const toggleFlip = () => {
-    console.log("Clicked card, current state:", flipped);
+  const toggleFlip = (index) => {
+    console.log(`Clicked card ${index}, current state:`, flipped[index]);
     setFlipped((prev) => {
-      const newState = !prev;
-      console.log("New state:", newState);
+      const newState = [...prev];
+      newState[index] = !newState[index];
+      console.log(`New state for card ${index}:`, newState[index]);
       return newState;
     });
   };
 
-  // Test with one card first
-  const award = awards[0];
-
   return (
     <div
       id="awards"
-      className="bg-[#0c1c24] min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-white"
+      className="bg-theme min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-theme"
     >
       <div className="text-center mb-8 sm:mb-12">
-        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme">
           Celebrating Excellence
         </h4>
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-2">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-2">
           Honors and Recognitions that Shine Bright
         </p>
       </div>
-      <div className="grid grid-cols-1 max-w-sm mx-auto">
-        <div style={{ perspective: "1000px" }}>
-          <div
-            className="relative w-full h-96 transition-transform duration-500 cursor-pointer"
-            style={{
-              transformStyle: "preserve-3d",
-              transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
-            }}
-            onClick={toggleFlip}
-          >
-            {/* Front */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        {awards.map((award, index) => (
+          <div key={index} style={{ perspective: "1000px" }}>
             <div
-              className="absolute inset-0 bg-gray-900 rounded-xl shadow-lg flex flex-col items-center p-4"
-              style={{ backfaceVisibility: "hidden" }}
-            >
-              <img
-                src={award.image}
-                alt={award.title}
-                className="w-full h-48 object-cover rounded-t-xl"
-              />
-              <h5 className="text-base sm:text-lg font-semibold text-[#34fb7b] mt-4 text-center">
-                {award.title}
-              </h5>
-            </div>
-            {/* Back */}
-            <div
-              className="absolute inset-0 bg-gray-800 rounded-xl shadow-lg flex flex-col items-center p-4"
+              className="relative w-full h-96 transition-transform duration-500"
               style={{
-                backfaceVisibility: "hidden",
-                transform: "rotateY(180deg)",
+                transformStyle: "preserve-3d",
+                transform: flipped[index] ? "rotateY(180deg)" : "rotateY(0deg)",
               }}
             >
-              <img
-                src={award.image}
-                alt={award.title}
-                className="w-20 h-20 rounded-md border-2 border-[#34fb7b] object-cover"
-              />
-              <h5 className="text-base sm:text-lg font-semibold text-[#34fb7b] mt-2">
-                {award.title}
-              </h5>
-              <p className="text-sm sm:text-base text-gray-300 mt-2">{award.organization}</p>
-              <p className="text-sm sm:text-base text-gray-300">{award.date}</p>
-              <p className="text-sm sm:text-base text-gray-200 mt-4 flex-1">{award.description}</p>
-              <button
-                className="bg-[#34fb7b] text-black font-semibold py-2 px-4 rounded-full hover:bg-[#2de069] transition duration-300 mt-4"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  console.log("Button clicked, no flip");
+              {/* Front */}
+              <div
+                className="absolute inset-0 bg-card rounded-xl shadow-lg flex flex-col items-center p-4"
+                style={{ backfaceVisibility: "hidden" }}
+              >
+                <img
+                  src={award.image}
+                  alt={award.title}
+                  className="w-full h-48 object-cover rounded-xl"
+                />
+                <h5 className="text-base sm:text-lg font-semibold text-accent mt-4 text-center">
+                  {award.title}
+                </h5>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mt-2">
+                  {award.organization}
+                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+                  {award.date}
+                </p>
+                <button
+                  className="btn-accent font-semibold py-2 px-4 rounded-full transition duration-300 mt-4"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFlip(index);
+                  }}
+                >
+                  Show Details
+                </button>
+              </div>
+              {/* Back */}
+              <div
+                className="absolute inset-0 bg-card-content rounded-xl shadow-lg flex flex-col items-center p-4"
+                style={{
+                  backfaceVisibility: "hidden",
+                  transform: "rotateY(180deg)",
                 }}
               >
-                View Details
-              </button>
+                <img
+                  src={award.image}
+                  alt={award.title}
+                  className="w-20 h-20 rounded-md border-2 border-accent object-cover"
+                />
+                <h5 className="text-base sm:text-lg font-semibold text-accent mt-2">
+                  {award.title}
+                </h5>
+                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-200 mt-4 flex-1">
+                  {award.description}
+                </p>
+                <button
+                  className="btn-accent font-semibold py-2 px-4 rounded-full transition duration-300 mt-4"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFlip(index);
+                  }}
+                >
+                  Go Back
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

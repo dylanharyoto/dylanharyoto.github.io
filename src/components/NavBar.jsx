@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ toggleTheme, theme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const scrollSection = (sectionID) => {
     document.getElementById(sectionID).scrollIntoView({
@@ -8,17 +8,18 @@ const NavBar = () => {
     });
     setIsOpen(false);
   };
+
   return (
     <>
-      <nav className="hidden lg:grid grid-cols-[25%_50%_25%] bg-[#212121] rounded-[40px] py-1.5 items-center shadow-[0_0_10px_rgba(255,255,255,0.5)]">
+      <nav className="hidden lg:grid grid-cols-[25%_50%_25%] bg-card rounded-[40px] py-1.5 items-center shadow-[0_0_10px_rgba(255,255,255,0.5)] dark:shadow-[0_0_10px_rgba(0,0,0,0.5)]">
         <div className="flex justify-start items-center mx-2.5">
-          <div className="min-w-[40px] h-[40px] rounded-full bg-white flex justify-center items-center">
+          <div className="min-w-[40px] h-[40px] rounded-full bg-theme flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="25"
-              fill="black"
-              className="bi bi-gender-male"
+              fill="currentColor"
+              className="text-theme"
               viewBox="0 0 16 16"
             >
               <path
@@ -27,55 +28,68 @@ const NavBar = () => {
               />
             </svg>
           </div>
-          <a href="#opening" className="ml-2 text-lg">
+          <a href="#opening" className="ml-2 text-lg text-theme">
             ddh
           </a>
         </div>
         <div className="flex justify-center items-center mx-2.5">
           <a
             onClick={() => scrollSection("about")}
-            className="text-white text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-[#555]"
+            className="text-theme text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             About
           </a>
           <a
             onClick={() => scrollSection("experiences")}
-            className="text-white text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-[#555]"
+            className="text-theme text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             Experiences
           </a>
           <a
             onClick={() => scrollSection("projects")}
-            className="text-white text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-[#555]"
+            className="text-theme text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             Projects
           </a>
           <a
             onClick={() => scrollSection("activities")}
-            className="text-white text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-[#555]"
+            className="text-theme text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             Activities
           </a>
           <a
             onClick={() => scrollSection("awards")}
-            className="text-white text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-[#555]"
+            className="text-theme text-lg px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             Awards
           </a>
         </div>
         <div className="flex justify-end items-center mx-2.5">
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="white"
-              className="bi bi-moon"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
-            </svg>
-          </a>
+          <button onClick={toggleTheme}>
+            {theme === "dark" ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                className="text-theme"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                className="text-theme"
+                viewBox="0 0 16 16"
+              >
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+              </svg>
+            )}
+          </button>
         </div>
       </nav>
       {!isOpen && (
@@ -87,8 +101,8 @@ const NavBar = () => {
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
-            fill="white"
-            className="bi bi-list"
+            fill="currentColor"
+            className="text-theme"
             viewBox="0 0 16 16"
           >
             <path
@@ -99,7 +113,7 @@ const NavBar = () => {
         </button>
       )}
       {isOpen && (
-        <div className="fixed inset-0 bg-[#212121] z-30 flex flex-col items-center justify-center">
+        <div className="fixed Hittin inset-0 bg-card z-30 flex flex-col items-center justify-center text-theme">
           <button
             className="absolute top-4 right-4"
             onClick={() => setIsOpen(false)}
@@ -108,8 +122,8 @@ const NavBar = () => {
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="25"
-              fill="white"
-              className="bi bi-x"
+              fill="currentColor"
+              className="text-theme"
               viewBox="0 0 16 16"
             >
               <path
@@ -120,50 +134,63 @@ const NavBar = () => {
           </button>
           <a
             onClick={() => scrollSection("about")}
-            className="text-white text-lg py-2 hover:underline hover:text-[#34fb7b]"
+            className="text-lg py-2 hover:underline hover:text-accent"
           >
             About
           </a>
           <a
             onClick={() => scrollSection("experiences")}
-            className="text-white text-lg py-2 hover:underline hover:text-[#34fb7b]"
+            className="text-lg py-2 hover:underline hover:text-accent"
           >
             Experiences
           </a>
           <a
             onClick={() => scrollSection("projects")}
-            className="text-white text-lg py-2 hover:underline hover:text-[#34fb7b]"
+            className="text-lg py-2 hover:underline hover:text-accent"
           >
             Projects
           </a>
           <a
             onClick={() => scrollSection("activities")}
-            className="text-white text-lg py-2 hover:underline hover:text-[#34fb7b]"
+            className="text-lg py-2 hover:underline hover:text-accent"
           >
             Activities
           </a>
           <a
             onClick={() => scrollSection("awards")}
-            className="text-white text-lg py-2 hover:underline hover:text-[#34fb7b]"
+            className="text-lg py-2 hover:underline hover:text-accent"
           >
             Awards
           </a>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="white"
-              className="bi bi-moon"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
-            </svg>
-          </a>
+          <button onClick={toggleTheme} className="mt-4">
+            {theme === "dark" ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                className="text-theme"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                className="text-theme"
+                viewBox="0 0 16 16"
+              >
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+              </svg>
+            )}
+          </button>
         </div>
       )}
     </>
   );
 };
 
-export default NavBar;
+export default NavBar;  

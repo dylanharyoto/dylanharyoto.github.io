@@ -2,63 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles using @apply for complex elements */
-.dotline {
-  @apply w-[35px] h-full p-[70px_20px];
-}
-.dotline > .dot {
-  @apply w-[10px] h-[10px] border-[5px] border-[#34fb7b] rounded-full mx-auto;
-}
-.dotline > .line {
-  @apply w-[10%] h-[132%] bg-[#34fb7b] mx-auto;
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --card-content-bg: #e0e0e0;
+  --accent-color: #228b22;
+  --accent-hover: #1a6b1a;
 }
 
-/* Project slider custom styles (not easily replicable with Tailwind) */
-#projects .boxes > label {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  right: 0;
-  cursor: pointer;
-  transition: transform 0.55s ease;
+.dark {
+  --bg-color: #0c1c24;
+  --text-color: #ffffff;
+  --card-bg: #1a2e38;
+  --card-content-bg: #2a3e48;
+  --accent-color: #34fb7b;
+  --accent-hover: #2de069;
 }
-#projects #s1:checked ~ .boxes #slide4,
-#projects #s2:checked ~ .boxes #slide5,
-#projects #s3:checked ~ .boxes #slide1,
-#projects #s4:checked ~ .boxes #slide2,
-#projects #s5:checked ~ .boxes #slide3 {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
-  transform: translate3d(-70%, 0, -220px);
+
+.bg-theme {
+  background-color: var(--bg-color);
 }
-#projects #s1:checked ~ .boxes #slide5,
-#projects #s2:checked ~ .boxes #slide1,
-#projects #s3:checked ~ .boxes #slide2,
-#projects #s4:checked ~ .boxes #slide3,
-#projects #s5:checked ~ .boxes #slide4 {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
-  transform: translate3d(-35%, 0, -120px);
+
+.text-theme {
+  color: var(--text-color);
 }
-#projects #s1:checked ~ .boxes #slide1,
-#projects #s2:checked ~ .boxes #slide2,
-#projects #s3:checked ~ .boxes #slide3,
-#projects #s4:checked ~ .boxes #slide4,
-#projects #s5:checked ~ .boxes #slide5 {
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
-  transform: translate3d(0, 0, 0);
+
+.bg-card {
+  background-color: var(--card-bg);
 }
-#projects #s1:checked ~ .boxes #slide2,
-#projects #s2:checked ~ .boxes #slide3,
-#projects #s3:checked ~ .boxes #slide4,
-#projects #s4:checked ~ .boxes #slide5,
-#projects #s5:checked ~ .boxes #slide1 {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
-  transform: translate3d(35%, 0, -120px);
+
+.bg-card-content {
+  background-color: var(--card-content-bg);
 }
-#projects #s1:checked ~ .boxes #slide3,
-#projects #s2:checked ~ .boxes #slide4,
-#projects #s3:checked ~ .boxes #slide5,
-#projects #s4:checked ~ .boxes #slide1,
-#projects #s5:checked ~ .boxes #slide2 {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
-  transform: translate3d(70%, 0, -220px);
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.border-accent {
+  border-color: var(--accent-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: #000000;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
+
+.accent-text {
+  color: var(--accent-color);
 }

@@ -3,7 +3,8 @@ import ActivityBox from "../components/ActivityBox";
 
 const activities = [
   {
-    imageName: "/l1.jpg",
+    logo: "/hsbc_logo.png",
+    imageName: "/activity_1.jpg",
     position: "Student Ambassador",
     activityName: "HSBC/HKU Business Case Competition",
     activityWeb: "https://competition.acrc.hku.hk/",
@@ -13,7 +14,8 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    imageName: "/l2.jpg",
+    logo: "/google_logo.png",
+    imageName: "/activity_2.jpg",
     position: "Vice President",
     activityName: "Google Developer Student Clubs PolyU",
     activityWeb: "https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/",
@@ -23,7 +25,8 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    imageName: "/l3.jpg",
+    logo: "/aee_logo.png",
+    imageName: "/activity_3.jpg",
     position: "Service Project Lead",
     activityName: "African Evangelistic Enterprise",
     activityWeb: "https://aeint.org/",
@@ -33,7 +36,8 @@ const activities = [
     location: "Rwanda, Africa",
   },
   {
-    imageName: "/l4.jpg",
+    logo: "/polyu_racing_logo.png",
+    imageName: "/activity_4.jpg",
     position: "Technology Innovation Lead",
     activityName: "PolyU E-Formula Racing Team",
     activityWeb: "https://hkpolyuracing.com/",
@@ -43,7 +47,8 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    imageName: "/l5.jpg",
+    logo: "/google_logo.png",
+    imageName: "/activity_5.jpg",
     position: "Technical Lead",
     activityName: "Google Developer Student Clubs PolyU",
     activityWeb: "https://gdsc.community.dev/hong-kong-polytechnic-university-hong-kong-hong-kong/",
@@ -53,7 +58,8 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    imageName: "/l6.jpg",
+    logo: "/wro_logo.png",
+    imageName: "/activity_6.jpg",
     position: "Country Representative",
     activityName: "World Robot Olympiad",
     activityWeb: "https://wro-association.org/",
@@ -74,13 +80,13 @@ const Activities = () => {
   return (
     <div
       id="activities"
-      className="bg-[#0c1c24] min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-white"
+      className="bg-theme min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-theme"
     >
       <div className="text-center mb-8 sm:mb-12">
-        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme">
           Leading by Example
         </h4>
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-2">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-2">
           Making a Difference through Guiding Others
         </p>
       </div>

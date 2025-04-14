@@ -5,8 +5,8 @@ const About = () => {
   useEffect(() => {
     const typed = new Typed("#typed-element", {
       strings: [
-        "Hi there👋, I am Dominicus <span class='text-[#34fb7b]'>Dylan</span> Haryoto",
-        "A Software Engineer Intern at <span class='text-[#34fb7b]'>BNP Paribas</span>",
+        "Hi there👋, I am Dominicus <span class='accent-text'>Dylan</span> Haryoto",
+        "A Software Engineer Intern at <span class='accent-text'>BNP Paribas</span>",
       ],
       typeSpeed: 50,
       backSpeed: 25,
@@ -22,14 +22,14 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-[#0c1c24] h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36"
+      className="bg-theme h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-[auto_auto_auto_auto] md:grid-rows-[auto_auto_auto] gap-y-4 sm:gap-y-6 md:gap-y-8 lg:gap-x-12 xl:gap-x-16 h-full">
         <div className="col-span-2 text-center row-start-1">
-          <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+          <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme">
             Unveiling the Real Me
           </h4>
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-2">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-2">
             Revealing the Person Behind the Story
           </p>
         </div>
@@ -37,14 +37,14 @@ const About = () => {
           <img
             src="/osa.jpg"
             alt="Profile"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain border-3 border-[#34fb7b] rounded-xl"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto border-[3px] border-accent rounded-xl"
           />
         </div>
         <div className="flex flex-col justify-center items-center md:items-start row-start-3 md:col-start-1 md:row-start-2 text-center md:text-left gap-y-4">
-          <h1 className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl text-white leading-tight sm:leading-snug">
+          <h1 className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl text-theme leading-tight sm:leading-snug">
             <span id="typed-element"></span>
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-prose">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-prose">
             Since my first year, I have let my passion for business and
             technology lead me. I have served as the Vice President of the
             Google Developer Student Club, undergone an exchange study at
@@ -55,47 +55,47 @@ const About = () => {
         </div>
         <div className="flex flex-wrap justify-center items-center col-span-2 row-start-4 md:row-start-3 gap-2 sm:gap-4 md:gap-6">
           <img
-            src="s1.png"
+            src="skill_1.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s2.png"
+            src="skill_2.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s3.png"
+            src="skill_3.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s4.png"
+            src="skill_4.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s8.png"
+            src="skill_5.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s9.png"
+            src="skill_6.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s10.png"
+            src="skill_7.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s11.png"
+            src="skill_8.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s12.png"
+            src="skill_9.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s13.png"
+            src="skill_10.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
           <img
-            src="s14.png"
+            src="skill_11.png"
             className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
           />
         </div>
