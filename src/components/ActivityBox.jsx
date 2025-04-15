@@ -77,7 +77,7 @@ const ActivityBox = ({
           <img
             src={imageName}
             alt={activityName}
-            className="w-full h-full object-cover rounded-xl mb-4"
+            className="w-full h-60 object-cover rounded-xl mb-4"
           />
           <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg text-gray-700 dark:text-gray-200">
             <li>{detail1}</li>

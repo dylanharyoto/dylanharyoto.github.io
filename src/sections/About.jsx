@@ -50,7 +50,11 @@ const About = () => {
             Google Developer Student Club, undergone an exchange study at
             Nanyang Technological University, participated in hackathons, and
             worked as an intern with medium-sized and large, international
-            enterprises.
+            enterprises. Click{" "}
+            <a className='accent-text' href="https://www.polyu.edu.hk/en/sao/student-resources-and-support-section/outstanding-student-academy/sharing-corner/" target="_blank">
+              here
+            </a>{" "}
+            to learn more about me!
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center col-span-2 row-start-4 md:row-start-3 gap-2 sm:gap-4 md:gap-6">

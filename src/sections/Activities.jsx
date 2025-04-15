@@ -3,7 +3,7 @@ import ActivityBox from "../components/ActivityBox";
 
 const activities = [
   {
-    logo: "/hsbc_logo.png",
+    logo: "/logo_activity_1.jpeg",
     imageName: "/activity_1.jpg",
     position: "Student Ambassador",
     activityName: "HSBC/HKU Business Case Competition",
@@ -14,7 +14,7 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    logo: "/google_logo.png",
+    logo: "/logo_activity_2.jpeg",
     imageName: "/activity_2.jpg",
     position: "Vice President",
     activityName: "Google Developer Student Clubs PolyU",
@@ -25,7 +25,7 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    logo: "/aee_logo.png",
+    logo: "/logo_activity_3.jpeg",
     imageName: "/activity_3.jpg",
     position: "Service Project Lead",
     activityName: "African Evangelistic Enterprise",
@@ -36,7 +36,7 @@ const activities = [
     location: "Rwanda, Africa",
   },
   {
-    logo: "/polyu_racing_logo.png",
+    logo: "/logo_activity_4.jpeg",
     imageName: "/activity_4.jpg",
     position: "Technology Innovation Lead",
     activityName: "PolyU E-Formula Racing Team",
@@ -47,7 +47,7 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    logo: "/google_logo.png",
+    logo: "/logo_activity_2.jpeg",
     imageName: "/activity_5.jpg",
     position: "Technical Lead",
     activityName: "Google Developer Student Clubs PolyU",
@@ -58,7 +58,7 @@ const activities = [
     location: "Hong Kong SAR",
   },
   {
-    logo: "/wro_logo.png",
+    logo: "/logo_activity_5.jpeg",
     imageName: "/activity_6.jpg",
     position: "Country Representative",
     activityName: "World Robot Olympiad",

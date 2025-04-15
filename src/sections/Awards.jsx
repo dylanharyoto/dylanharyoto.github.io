@@ -75,7 +75,7 @@ const Awards = () => {
         {awards.map((award, index) => (
           <div key={index} style={{ perspective: "1000px" }}>
             <div
-              className="relative w-full h-96 transition-transform duration-500"
+              className="relative w-full min-h-[320px] transition-transform duration-500"
               style={{
                 transformStyle: "preserve-3d",
                 transform: flipped[index] ? "rotateY(180deg)" : "rotateY(0deg)",
@@ -83,36 +83,40 @@ const Awards = () => {
             >
               {/* Front */}
               <div
-                className="absolute inset-0 bg-card rounded-xl shadow-lg flex flex-col items-center p-4"
+                className="absolute inset-0 bg-card rounded-xl shadow-lg flex flex-col items-center p-3 sm:p-4"
                 style={{ backfaceVisibility: "hidden" }}
               >
                 <img
                   src={award.image}
                   alt={award.title}
-                  className="w-full h-48 object-cover rounded-xl"
+                  className="w-full h-36 sm:h-40 object-cover rounded-xl"
                 />
-                <h5 className="text-base sm:text-lg font-semibold text-accent mt-4 text-center">
-                  {award.title}
-                </h5>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mt-2">
-                  {award.organization}
-                </p>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                  {award.date}
-                </p>
-                <button
-                  className="btn-accent font-semibold py-2 px-4 rounded-full transition duration-300 mt-4"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleFlip(index);
-                  }}
-                >
-                  Show Details
-                </button>
+                <div className="flex-1 flex flex-col items-center justify-between min-h-0 w-full">
+                  <div className="text-center">
+                    <h5 className="text-sm sm:text-base font-semibold text-accent mt-2">
+                      {award.title}
+                    </h5>
+                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-1">
+                      {award.organization}
+                    </p>
+                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300">
+                      {award.date}
+                    </p>
+                  </div>
+                  <button
+                    className="btn-accent font-semibold py-1.5 px-3 text-sm rounded-full transition duration-300 mt-2"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleFlip(index);
+                    }}
+                  >
+                    Show Details
+                  </button>
+                </div>
               </div>
               {/* Back */}
               <div
-                className="absolute inset-0 bg-card-content rounded-xl shadow-lg flex flex-col items-center p-4"
+                className="absolute inset-0 bg-card-content rounded-xl shadow-lg flex flex-col items-center p-3 sm:p-4"
                 style={{
                   backfaceVisibility: "hidden",
                   transform: "rotateY(180deg)",
@@ -121,23 +125,27 @@ const Awards = () => {
                 <img
                   src={award.image}
                   alt={award.title}
-                  className="w-20 h-20 rounded-md border-2 border-accent object-cover"
+                  className="w-16 h-16 rounded-md border-2 border-accent object-cover"
                 />
-                <h5 className="text-base sm:text-lg font-semibold text-accent mt-2">
-                  {award.title}
-                </h5>
-                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-200 mt-4 flex-1">
-                  {award.description}
-                </p>
-                <button
-                  className="btn-accent font-semibold py-2 px-4 rounded-full transition duration-300 mt-4"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleFlip(index);
-                  }}
-                >
-                  Go Back
-                </button>
+                <div className="flex-1 flex flex-col items-center justify-between min-h-0 w-full">
+                  <div className="text-center">
+                    <h5 className="text-sm sm:text-base font-semibold text-accent mt-2">
+                      {award.title}
+                    </h5>
+                    <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-200 mt-2">
+                      {award.description}
+                    </p>
+                  </div>
+                  <button
+                    className="btn-accent font-semibold py-1.5 px-3 text-sm rounded-full transition duration-300 mt-2"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleFlip(index);
+                    }}
+                  >
+                    Go Back
+                  </button>
+                </div>
               </div>
             </div>
           </div>
