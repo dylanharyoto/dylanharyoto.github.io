@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.2e2a7695.css","mappings":"AAAA,KAEA,iBAAoB,CADpB,QAEA,CAEA,KACA,uEAEA","sources":["index.css"],"sourcesContent":["body {\nmargin: 0;\nfont-family: \"Rubik\";\n}\n\ncode {\nfont-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}"],"names":[],"sourceRoot":""}
