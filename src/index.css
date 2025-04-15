@@ -1,9 +1,58 @@
-body {
-margin: 0;
-font-family: "Rubik";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --card-content-bg: #e0e0e0;
+  --accent-color: #228b22;
+  --accent-hover: #1a6b1a;
 }
 
-code {
-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark {
+  --bg-color: #0c1c24;
+  --text-color: #ffffff;
+  --card-bg: #1a2e38;
+  --card-content-bg: #2a3e48;
+  --accent-color: #34fb7b;
+  --accent-hover: #2de069;
+}
+
+.bg-theme {
+  background-color: var(--bg-color);
+}
+
+.text-theme {
+  color: var(--text-color);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.bg-card-content {
+  background-color: var(--card-content-bg);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.border-accent {
+  border-color: var(--accent-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: #000000;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
+
+.accent-text {
+  color: var(--accent-color);
 }
