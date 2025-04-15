@@ -28,15 +28,12 @@ const ExperienceBox = ({
           <h5 className="text-lg sm:text-xl md:text-2xl font-semibold text-theme">
             {position}
           </h5>
-          <a
-            href={companyWeb}
-            target="_blank"
-            rel="noopener noreferrer"
+          <p
             className="text-base sm:text-lg text-gray-600 dark:text-gray-300 hover:text-accent"
             onClick={(e) => e.stopPropagation()}
           >
             {companyName}
-          </a>
+          </p>
         </div>
         <svg
           className={`w-6 h-6 transform transition-transform duration-300 text-gray-600 dark:text-gray-300 ${
@@ -47,7 +44,12 @@ const ExperienceBox = ({
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 9l-7 7-7-7"
+          />
         </svg>
       </button>
       <div

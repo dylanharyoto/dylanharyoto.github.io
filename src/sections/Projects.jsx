@@ -5,25 +5,25 @@ const projects = [
     title: "GoPark",
     description: "Smart parking app for traffic congestion.",
     link: "https://hello-gopark.github.io/",
-    video: "/p1.mp4", // Added leading slash
+    video: "/project_1.mp4", // Added leading slash
   },
   {
     title: "PolyShop",
     description: "User-friendly online shopping system.",
     link: "https://github.com/dylanharyoto/Online-Shopping-System",
-    video: "/p2.mp4", // Added leading slash
+    video: "/project_2.mp4", // Added leading slash
   },
   {
     title: "Taskly",
     description: "Command-line task management system.",
     link: "https://github.com/dylanharyoto/Command-Line-Task-Management-System",
-    video: "/p3.mp4", // Added leading slash
+    video: "/project_3.mp4", // Added leading slash
   },
   {
     title: "MonoPolyU",
     description: "The Monopoly Game",
     link: "https://github.com/dylanharyoto/The-Monopoly-Game",
-    video: "/p4.mp4", // Added leading slash
+    video: "/project_4.mp4", // Added leading slash
   },
   {
     title: "More to come!",

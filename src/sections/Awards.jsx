@@ -2,42 +2,42 @@ import React, { useState } from "react";
 
 const awards = [
   {
-    image: "/a9.jpg",
+    image: "/award_1.jpg",
     title: "Presidential Student Leadership Award",
     organization: "The Hong Kong Polytechnic University",
     date: "March 26, 2024",
     description: "Recognized for outstanding leadership and community impact.",
   },
   {
-    image: "/a8.jpg",
+    image: "/award_2.jpg",
     title: "Merit Award - Digital Economy",
     organization: "Hong Kong Techathon",
     date: "January 28, 2024",
     description: "Awarded for innovative solutions in digital transformation.",
   },
   {
-    image: "/a7.jpg",
+    image: "/award_3.jpg",
     title: "2nd Runner Up & Best GIS Award",
     organization: "PolyHack",
     date: "June 24, 2023",
     description: "Honored for excellence in geospatial technology and teamwork.",
   },
   {
-    image: "/a1.jpg",
+    image: "/award_4.jpg",
     title: "Bronze Medalist & Best Innovation",
     organization: "World Robot Olympiad",
     date: "November 15, 2020",
     description: "Celebrated for creative robotics design and execution.",
   },
   {
-    image: "/a3.jpg",
+    image: "/award_5.jpg",
     title: "Gold Medalist",
     organization: "Indonesian Robotics Olympiad",
     date: "September 7, 2019",
     description: "Achieved top honors in national robotics competition.",
   },
   {
-    image: "/a4.jpg",
+    image: "/award_6.jpg",
     title: "1st Place Winner",
     organization: "Mechatronics Day 4.0",
     date: "October 21, 2018",
