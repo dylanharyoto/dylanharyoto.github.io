@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 
 const About = () => {
+  // Create the array of skill image paths
+  const skillImages = Array.from({length: 11}, (_, i) => `skill_${i + 1}.png`);
+
   useEffect(() => {
     const typed = new Typed("#typed-element", {
       strings: [
@@ -57,51 +60,18 @@ const About = () => {
             to learn more about me!
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center col-span-2 row-start-4 md:row-start-3 gap-2 sm:gap-4 md:gap-6">
-          <img
-            src="skill_1.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_2.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_3.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_4.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_5.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_6.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_7.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_8.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_9.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_10.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
-          <img
-            src="skill_11.png"
-            className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
-          />
+        <div className="flex flex-wrap justify-center items-center col-span-2 gap-y-1 gap-x-2 sm:gap-x-4 md:gap-x-6 h-0">
+          {skillImages.map((src, index) => (
+            <div
+              key={index}
+              className="bg-gray-500 dark:bg-transparent rounded-md opacity-50  dark:opacity-100 py-2 md:my-4 sm:my-2">
+              <img
+                src={src}
+                className="h-5 sm:h-6 md:h-8 lg:h-10 xl:h-10 mx-1 sm:mx-2 md:mx-4 lg:mx-5"
+                alt={`Skill ${index + 1}`}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
