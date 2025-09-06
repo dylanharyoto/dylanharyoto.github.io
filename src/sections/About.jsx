@@ -5,8 +5,8 @@ const About = () => {
   useEffect(() => {
     const typed = new Typed("#typed-element", {
       strings: [
-        "Hi there👋, I am Dominicus <span class='accent-text'>Dylan</span> Haryoto",
-        "A Software Engineer Intern at <span class='accent-text'>BNP Paribas</span>",
+        "Hi there 👋, I am Dominicus <span class='accent-text'>Dylan</span> Haryoto",
+        "A recent Summer Analyst at <span class='accent-text'>Jefferies</span>",
       ],
       typeSpeed: 50,
       backSpeed: 25,
@@ -45,7 +45,7 @@ const About = () => {
             <span id="typed-element"></span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-prose">
-            Since my first year, I have let my passion for business and
+            Since my first year, I have let my passion for finance and
             technology lead me. I have served as the Vice President of the
             Google Developer Student Club, undergone an exchange study at
             Nanyang Technological University, participated in hackathons, and

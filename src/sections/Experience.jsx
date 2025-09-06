@@ -3,14 +3,25 @@ import ExperienceBox from "../components/ExperienceBox";
 
 const experiences = [
   {
+    companyLogo: "/logo_6.jpeg",
+    companyName: "Jefferies",
+    companyWeb: "https://www.jefferies.com/",
+    position: "Technology Summer Analyst",
+    timeline: "Jun 2025 - Aug 2025",
+    detail1: "Developed a React.js platform with Express.js backend to deliver real-time RFQ metrics from KDB+ for APAC Fixed Income traders.",
+    detail2: "Built a Python GUI tool to streamline ION MarketView batch configurations and implemented RFQ pricing analysis in ION MarketView.",
+    skills: ["React.js", "Express.js", "KDB+", "ION MarketView"],
+    country: "Hong Kong SAR"
+  },
+  {
     companyLogo: "/logo_1.jpeg",
     companyName: "BNP Paribas",
     companyWeb: "https://www.bnpparibas.com.hk/en/",
     position: "Software Engineer Intern",
-    timeline: "Jan 2025 - Present",
-    detail1: "Building a distributed caching system (Hazelcast) in KDB+ integrated with a Pub/Sub architecture for more efficient storage and faster retrieval of trade executions.",
+    timeline: "Jan 2025 - Jun 2025",
+    detail1: "Built a distributed caching system in KDB+/q integrated with a Pub/Sub architecture for more efficient storage and faster retrieval of trade executions.",
     detail2: "Developed an object-oriented order book with limit and market order functionalities in Java, supporting FIX protocol, and integrated the VWAP algo to automate execution.",
-    skills: ["Java", "KDB+", "Hazelcast", "Pub/Sub", "FIX Protocol", "VWAP"],
+    skills: ["Java", "KDB+", "Pub/Sub", "FIX Protocol", "VWAP"],
     country: "Hong Kong SAR"
   },
   {
