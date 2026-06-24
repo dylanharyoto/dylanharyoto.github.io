@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ExperienceBox from "../components/ExperienceBox";
+import SectionHeading from "../components/SectionHeading";
 
 const experiences = [
   {
@@ -38,11 +39,10 @@ const experiences = [
   {
     companyLogo: "/logo_4.jpeg",
     companyName: "Castco Testing Centre Limited",
-    country: "Hong Kong SAR",
     companyWeb: "https://www.castco.com.hk/eng/home",
     position: "Software Engineer Intern",
     timeline: "Jun 2024 - Jun 2024",
-    detail1: "Created the back-end of the company’s vehicle tracking system using Traccar on Linux, established a connection to Microsoft SQL Server, and retrieved real-time data using API.",
+    detail1: "Created the back-end of the company's vehicle tracking system using Traccar on Linux, established a connection to Microsoft SQL Server, and retrieved real-time data using API.",
     detail2: "Enhanced filtering in 3 product registration apps by resolving SQL errors and adding filtering fields with undo functionality using Xamarin and C#.",
     skills: ["Traccar", "Linux", "Microsoft SQL Server", "APIs", "Xamarin", "C#", "SQL"],
     country: "Hong Kong SAR"
@@ -53,7 +53,7 @@ const experiences = [
     companyWeb: "https://hutchisonports.com/en/",
     position: "Data Analyst Intern",
     timeline: "Jun 2023 - Aug 2023",
-    detail1: "Optimized the company’s strategic expansion plans by producing data visualizations and comprehensive analysis of import/export statistics of potential countries using Tableau.",
+    detail1: "Optimized the company's strategic expansion plans by producing data visualizations and comprehensive analysis of import/export statistics of potential countries using Tableau.",
     detail2: "Contributed to the shipping line section of the monthly market reports by leveraging PowerBI to analyze and compare financial data from multiple shipping line companies.",
     skills: ["Tableau", "PowerBI", "Data Visualization", "Market Analysis"],
     country: "Hong Kong SAR"
@@ -68,29 +68,51 @@ const Experience = () => {
   };
 
   return (
-    <div
+    <section
       id="experiences"
-      className="bg-theme min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-theme"
+      className="bg-theme min-h-screen w-full scroll-mt-24 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 pt-16 sm:pt-20 md:pt-24 pb-16 sm:pb-20 text-theme"
     >
-      <div className="text-center mb-8 sm:mb-12">
-        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme">
-          Journey of Success
-        </h4>
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-2">
-          Moments from My Career Path
-        </p>
-      </div>
-      <div className="space-y-4 max-w-3xl mx-auto">
-        {experiences.map((experience, index) => (
-          <ExperienceBox
-            key={index}
-            {...experience}
-            isExpanded={expanded === index}
-            toggleExpand={() => toggleExpand(index)}
+      <SectionHeading
+        index="02"
+        label="EXPERIENCE"
+        title="Journey of Success"
+        subtitle="Moments from My Career Path"
+      />
+
+      <div className="max-w-4xl mx-auto">
+        <div className="relative">
+          <div
+            className="hidden sm:block absolute left-3 top-2 bottom-2 w-px"
+            style={{ backgroundColor: "var(--border-soft)" }}
           />
-        ))}
+
+          <div className="space-y-6">
+            {experiences.map((experience, index) => {
+              const isCurrent = experience.timeline.toLowerCase().includes("present");
+              return (
+                <div key={index} className="relative flex gap-4 sm:gap-6">
+                  <div className="hidden sm:flex flex-col items-center pt-6 w-6 flex-shrink-0">
+                    <span
+                      className={`w-3 h-3 rounded-full border-2 border-accent ${
+                        isCurrent ? "bg-accent animate-pulse-dot" : "bg-theme"
+                      }`}
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <ExperienceBox
+                      {...experience}
+                      isCurrent={isCurrent}
+                      isExpanded={expanded === index}
+                      toggleExpand={() => toggleExpand(index)}
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -10,33 +10,40 @@ const ExperienceBox = ({
   detail2,
   skills,
   country,
+  isCurrent,
   isExpanded,
   toggleExpand,
 }) => {
   return (
-    <div className="bg-card rounded-xl shadow-lg overflow-hidden">
+    <div
+      className={`bg-card rounded-xl shadow-lg overflow-hidden border hover-lift transition-colors duration-300 ${
+        isCurrent ? "border-accent" : "border-soft"
+      }`}
+    >
       <button
         onClick={toggleExpand}
-        className="w-full flex items-center p-4 sm:p-6 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300"
+        className="w-full flex items-center p-4 sm:p-6 hover:bg-accent-soft transition-colors duration-300 text-left"
       >
         <img
           src={companyLogo}
           alt={companyName}
-          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-4 border-accent flex-shrink-0"
+          className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-2 border-accent flex-shrink-0 object-cover"
         />
-        <div className="ml-4 sm:ml-6 text-left flex-1">
-          <h5 className="text-lg sm:text-xl md:text-2xl font-semibold text-theme">
-            {position}
-          </h5>
-          <p
-            className="text-base sm:text-lg text-gray-600 dark:text-gray-300 hover:text-accent"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {companyName}
-          </p>
+        <div className="ml-4 sm:ml-6 flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap">
+            <h5 className="font-display text-lg sm:text-xl md:text-2xl font-semibold text-theme">
+              {position}
+            </h5>
+            {isCurrent && (
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-wide text-accent border border-accent rounded-full px-2 py-0.5">
+                active
+              </span>
+            )}
+          </div>
+          <p className="text-sm sm:text-base md:text-lg text-muted">{companyName}</p>
         </div>
         <svg
-          className={`w-6 h-6 transform transition-transform duration-300 text-gray-600 dark:text-gray-300 ${
+          className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 ml-2 transform transition-transform duration-300 text-muted ${
             isExpanded ? "rotate-180" : ""
           }`}
           fill="none"
@@ -44,12 +51,7 @@ const ExperienceBox = ({
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 9l-7 7-7-7"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
       <div
@@ -59,31 +61,29 @@ const ExperienceBox = ({
       >
         <div className="bg-card-content p-4 sm:p-6">
           {skills && skills.length > 0 && (
-            <div className="mb-4">
-              <div className="inline-flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
-                  <span
-                    key={index}
-                    className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent text-white border border-accent"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {skills.map((skill, index) => (
+                <span
+                  key={index}
+                  className="font-mono text-xs sm:text-sm px-2.5 py-1 rounded-full border border-accent text-accent"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           )}
-          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg text-gray-700 dark:text-gray-200">
+          <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base md:text-lg text-theme">
             {detail1 && <li>{detail1}</li>}
             {detail2 && <li>{detail2}</li>}
           </ul>
-          <p className="mt-4 text-base sm:text-lg text-accent">
-            {timeline} {country && `| ${country}`}
+          <p className="font-mono mt-4 text-sm sm:text-base text-accent">
+            {timeline} {country && `· ${country}`}
           </p>
           <a
             href={companyWeb}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-block btn-accent font-semibold py-2 px-4 rounded-full transition duration-300"
+            className="mt-4 inline-block btn-accent font-semibold py-2 px-4 rounded-full transition duration-300 hover:scale-105"
           >
             Learn More
           </a>

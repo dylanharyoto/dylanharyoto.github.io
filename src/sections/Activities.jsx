@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ActivityBox from "../components/ActivityBox";
+import SectionHeading from "../components/SectionHeading";
 
 const activities = [
   {
@@ -78,18 +79,17 @@ const Activities = () => {
   };
 
   return (
-    <div
+    <section
       id="activities"
-      className="bg-theme min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 py-10 sm:py-16 md:py-20 lg:pt-24 xl:pt-36 text-theme"
+      className="bg-theme min-h-screen w-full scroll-mt-24 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-36 2xl:px-60 pt-16 sm:pt-20 md:pt-24 pb-16 sm:pb-20 text-theme"
     >
-      <div className="text-center mb-8 sm:mb-12">
-        <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme">
-          Leading by Example
-        </h4>
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-2">
-          Making a Difference through Guiding Others
-        </p>
-      </div>
+      <SectionHeading
+        index="04"
+        label="LEADERSHIP"
+        title="Leading by Example"
+        subtitle="Making a Difference through Guiding Others"
+      />
+
       <div className="space-y-4 max-w-3xl mx-auto">
         {activities.map((activity, index) => (
           <ActivityBox
@@ -100,7 +100,7 @@ const Activities = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
