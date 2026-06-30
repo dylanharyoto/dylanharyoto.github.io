@@ -5,27 +5,29 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #f5f5f2;
-  --text-color: #16212b;
-  --text-muted: #5c6b76;
-  --card-bg: #ffffff;
-  --card-content-bg: #ecefe9;
-  --accent-color: #1f8f4d;
-  --accent-hover: #176b39;
-  --accent-soft: rgba(31, 143, 77, 0.10);
-  --border-soft: rgba(31, 143, 77, 0.22);
+  /* Light Mode: Modern FinTech Portal Architecture */
+  --bg-color: #F8F9FA;
+  --text-color: #111827;
+  --text-muted: #4B5563;
+  --card-bg: #FFFFFF;
+  --card-content-bg: #F3F4F6;
+  --accent-color: #E66A00; 
+  --accent-hover: #C25900;
+  --accent-soft: rgba(230, 106, 0, 0.08);
+  --border-soft: rgba(230, 106, 0, 0.18);
 }
 
 .dark {
-  --bg-color: #0a1620;
-  --text-color: #e9eef1;
-  --text-muted: #7d93a1;
-  --card-bg: #101f2b;
-  --card-content-bg: #182936;
-  --accent-color: #34fb7b;
-  --accent-hover: #2de069;
-  --accent-soft: rgba(52, 251, 123, 0.08);
-  --border-soft: rgba(52, 251, 123, 0.18);
+  /* Dark Mode: The Classic Bloomberg Terminal Hardware Environment */
+  --bg-color: #000000; /* Pure terminal CRT black */
+  --text-color: #FFFFFF; /* High-contrast white data output */
+  --text-muted: #A0AEC0; /* Balanced structural text */
+  --card-bg: #0D0D0D; /* Layered block windows */
+  --card-content-bg: #161616;
+  --accent-color: #FF9900; /* Iconic Bloomberg Command Amber/Orange */
+  --accent-hover: #FF7700;
+  --accent-soft: rgba(255, 153, 0, 0.12);
+  --border-soft: rgba(255, 153, 0, 0.28);
 }
 
 html {
@@ -58,7 +60,7 @@ body {
 
 .btn-accent {
   background-color: var(--accent-color);
-  color: #06140c;
+  color: #000000; /* High contrast terminal black text on amber buttons */
 }
 .btn-accent:hover {
   background-color: var(--accent-hover);
@@ -93,7 +95,7 @@ button:focus-visible {
 
 ::selection {
   background: var(--accent-color);
-  color: #06140c;
+  color: #000000;
 }
 
 .typed-cursor {

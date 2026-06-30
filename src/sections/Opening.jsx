@@ -7,7 +7,7 @@ const Opening = () => {
   useEffect(() => {
     const typed = new Typed("#typed-element", {
       strings: [
-        "Hi there👋, I am Dominicus <span class='text-[#34fb7b]'>Dylan</span> Haryoto,<br/>a Software Engineer Intern at <span class='text-[#34fb7b]'>BNP Paribas</span>!",
+        "Hi there👋, I am Dominicus <span class='accent-text'>Dylan</span> Haryoto,<br/>a Software Engineer Intern at <span class='accent-text'>BNP Paribas</span>!",
         "Welcome to my personal collections. Let's connect!",
       ],
       typeSpeed: 50,
