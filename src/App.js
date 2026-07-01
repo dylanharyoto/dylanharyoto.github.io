@@ -35,7 +35,7 @@ function App() {
         <main className="relative z-10 flex flex-col w-full">
           <About />
           <Experience />
-          <Projects />
+          {/* <Projects /> */}
           <Activities />
           <Awards />
         </main>
